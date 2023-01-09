@@ -20,7 +20,7 @@
 - [📝 License](#license)
 
 
-# 📖 [CAPSTONE-PROJECT-MODULE-1] <a name="about-project"></a>
+# 📖 [Safari Retreat] <a name="about-project"></a>
 
 
 **Portfolio** is a responsive web design that contains projects I have done
@@ -84,7 +84,7 @@ In order to run this project you need:
 Go to this repsitory.
 Click on Code
 Clone the repository using your https link
-This will gove you access to all files
+This will give you access to all files
 
 
 
@@ -144,8 +144,8 @@ A web browser
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Adding projects I have done**
-- **CV page**
+- **An homepage with featured speakers loaded using javascript**
+- **An about page**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
