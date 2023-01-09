@@ -24,12 +24,8 @@ main {
     width: 320px;
 }
 
-header {
-    background-image: url('images/safari.jpg');
-}
-
 .navbar-desktop  {
-    background-image: url('images/safari.jpg');
+    background-image: url('/images/safari.jpg');
     /* opacity: .1; */
     width: 320px;
     min-height: 70px;
@@ -132,14 +128,12 @@ header {
 }
 
 .hamburger.active .bar:nth-child(1) {
-    transform: translateY(10px) rotate(45deg);
+    transform: translateY(12px) rotate(45deg);
 }
 
 .hamburger.active .bar:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
 }
-
-
 
 .nav-links-ul.active {
     left: 0;
@@ -227,9 +221,9 @@ header {
     width: 100%;
 }
 
-.title h3 {
+.title {
     color: white;
-    padding: 30px;
+    padding: 20px 20px 0 20px;
     font-family: 'Lato', sans-serif;
 }
 
@@ -242,15 +236,21 @@ header {
 }
 
 .program-description {
+    cursor: pointer;
     display: grid;
     grid-template-columns: 15% 27% 55%;
     align-items: center;
     margin-bottom: 5px;
     justify-content: space-around;
     background-color: rgba(85, 81, 81, 0.6);
-    /* border: 1px solid; */
     height: 80px;
     width: 95%;
+}
+
+.program-description:hover {
+    border: 2px solid;
+    border-color: white;
+
 }
 
 .program-description img {
@@ -281,6 +281,17 @@ header {
     background-color: #ec5242;
     border: 0;
     color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    transition: ease-in 0.5s;
+}
+
+.join-program-btn:hover {
+    background-color: black;
+    border: 1px solid;
+    border-color: #ec5242;
 }
 
 
@@ -302,7 +313,7 @@ header {
 .individual-speaker {
     display: flex;
     width: 90%;
-    margin: 5%;
+    margin: 0 5% 5% 5%;
 }
 
 .chessboard-and-speaker-image {
@@ -327,9 +338,7 @@ header {
 
 .speaker-name{
     font-weight: bold;
-    /* font-style: italic; */
     font-size: 10px;
-    /* padding: 5px; */
 }
 .speaker-education {
     color: #ec5242;
@@ -393,8 +402,9 @@ header {
 }
 
 .first-row-partners p:nth-child(1) {
+    font-family: 'Fira sans', sans-serif;
     font-size: 17px;
-    font-weight: 900;
+    font-weight: bold;
     color: #959494;
 }
 
