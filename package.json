@@ -1,5 +1,5 @@
 {
-  "name": "capstone-project-module-1",
+  "name": "safari-retreat",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coderacheal/Capstone-Project-Module-1.git"
+    "url": "git+https://github.com/coderacheal/Safari-Retreat.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/coderacheal/Capstone-Project-Module-1/issues"
+    "url": "https://github.com/coderacheal/Safari-Retreat/issues"
   },
-  "homepage": "https://github.com/coderacheal/Capstone-Project-Module-1#readme",
+  "homepage": "https://github.com/coderacheal/Safari-Retreat#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
