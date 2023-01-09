@@ -7,6 +7,10 @@
     margin: 0;
 }
 
+p {
+    font-family: 'Lato', sans-serif;
+}
+
 body {
     margin: 0;
     top: 0;
@@ -17,14 +21,19 @@ body {
 main {
     height: 100%;
     margin: 0;
-    /* background: red; */
     width: 320px;
 }
 
+header {
+    background-image: url('images/safari.jpg');
+}
+
 .navbar-desktop  {
+    background-image: url('images/safari.jpg');
+    /* opacity: .1; */
     width: 320px;
     min-height: 70px;
-    background-color: blue;
+    /* background-color: white; */
     position: fixed;
     right: 0;
     left: 0;
@@ -57,25 +66,55 @@ main {
 .nav-links-ul {
     display: flex;
     list-style-type: none;
+    height: 100%;
+    background-color: #ec5242;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #ec5242;
+    width: 320px;
+    transition: 0.3s;
 }
 
 .nav-links {
     top: 70px;
     padding: 10px;
-    background-color: white;
+    
+    padding: 20px;
+    width: 100%;
+    align-content: center;
+}
+
+.nav-links:hover {
+    background-color: #ff8d8d;
+}
+
+.nav-links a {
+    display: flex;
+    /* flex-direction: column; */
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    width: 100%;
+    align-items: center;
+    /* align-content: center; */
+    color: white;
 }
 
 .logo {
     display: none;
     text-decoration: none;
-    /* color: white; */
     vertical-align: center;
 }
 
 .hamburger {
     display: block;
     cursor: pointer;
-    /* margin-top: 20px; */
+    margin-top: 20px;
 }
 
 .bar {
@@ -100,16 +139,7 @@ main {
     transform: translateY(-10px) rotate(-45deg);
 }
 
-.nav-links-ul {
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    gap: 0;
-    flex-direction: column;
-    background-color: blue;
-    width: 320px;
-    transition: 0.3s;
-}
+
 
 .nav-links-ul.active {
     left: 0;
@@ -121,41 +151,70 @@ main {
 
 
 
-
+/* WELCOME */
 
 .welcome {
     margin-top: 70px;
+    background-color: #f0efef;
 } 
 
+.welcome img {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    opacity: .12;
+}
+
 .welcome-section-container {
-    width: 95%;
+    width: 300px;
+    top: 70px;
     display: flex;
     flex-direction: column;
-    margin: 2.5%;
-    /* margin-bottom: 10px; */
+    margin-left: 10px;
 }
 
 .welcome-section-container div {
     margin-bottom: 10px;
 }
 
+.akwaaba {
+    font-size: 19px;
+    margin: 15px 0 15px 0;
+    color: #ec5242;
+}
+
 .event-name {
-    font-family: Lato, sans-serif;
     font-size: 30px;
     font-weight: 700;
     color: #ec5242;
 }
 
 .intro-message {
-    border: 1px solid;
-    border-color: black;
-    margin-top: 20px;
+    border: 2px solid;
+    border-color: #ffffff;
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.date {
+    font-size: 23px;
+    font-weight: 700;
+    color: rgb(100, 98, 98);
+}
+
+.date-and-tourism {
+    margin-bottom: 30px;
+}
+
+.date-and-tourism {
+    padding-bottom: 30px;
 }
 
 
+
+
 /* Main proram  */
-
-
 .main-program {
     background-color: rgb(22, 19, 19);
     width: 100%;
@@ -210,7 +269,6 @@ main {
     font-size: 15px;
 }
 
-
 .short-note p {
     color: white;
     font-size: 11px;
@@ -227,35 +285,159 @@ main {
 
 
 
+/* Speakers */
+
+.featured-speakers-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.featured-speakers-div h3 {
+    font-family: 'Lato', sans-serif;
+    margin-top: 20px;
+}
+
+.individual-speaker {
+    display: flex;
+    width: 90%;
+    margin: 5%;
+}
+
+.chessboard-and-speaker-image {
+    position: relative;
+}
+.chess-board {
+    height: 40px;
+}
+
+.speaker-image img{
+    height: 60px;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+
+.speaker-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+}
+
+.speaker-name{
+    font-weight: bold;
+    /* font-style: italic; */
+    font-size: 10px;
+    /* padding: 5px; */
+}
+.speaker-education {
+    color: #ec5242;
+    font-style: italic;
+    font-size: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.span-black {
+   width: 15px; 
+   height: .5px;
+   background-color: black;
+}
+
+.span-red {
+   width: 20px; 
+   height: 1px;
+   background-color: #ec5242;
+   margin: 10px;
+}
+
+.speaker-accolades {
+    font-size: 8px;
+    padding-top: 5px;
+}
+
+
+
 
 
 /* Partner */
 
 .partners {
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #272a31;
+}
+
+.partners p {
+    color: white;
+    margin-top: 15px;
 }
 
 .partner-names-div {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin: 0 0 20px 0;
+
 }
 
 .first-row-partners {
     display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    color: #423838;
+    font-weight: bold;
+    /* opacity: 0.5; */
 }
+
+.first-row-partners p:nth-child(1) {
+    font-size: 17px;
+    font-weight: 900;
+    color: #959494;
+}
+
+.first-row-partners p:nth-child(2) {
+    font-size: 16px;
+    font-weight: 100;
+    color: #959494;
+    /* opacity: .3; */
+}
+
+.first-row-partners p:nth-child(3) {
+    font-size: 17px;
+    font-weight: 900;
+    font-family: 'Segoe UI', sans-serif;
+    color: #959494;
+}
+
+.google-l {
+    color: white;
+    font-weight: 100;
+    opacity: 0.8;
+}
+
 
 .second-row-partners {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    color: #d3d3d3;
+    opacity: 0.5;
+    width: 80%;
+    align-content: center;
+    margin-left: 20px;
+    font-size: 14px;
 }
 
-.first-row-partners p {
-    display: flex;
-    color: white;
-}
 
-.second-row-partners p {
-    display: flex;
-    color: white;
+.second-row-partners img {
+    height: 15px;
+    color: whitesmoke;
+    border-radius: 40%;
+
 }
 
 
@@ -283,7 +465,7 @@ main {
 .creative-commons p {
     font-size: 12px;
     font-weight: bold;
-    line-height: 6px;
+    line-height: 8px;
 }
 
 .footer-copyright {
@@ -291,18 +473,4 @@ main {
 }
 .footer-copyright p {
     font-size: 10px;
-}
-
-
-
-
-.individual-speaker {
-    display: flex;
-    width: 90%;
-    margin: 5%;
-
-}
-
-.speaker-image img{
-    height: 100px;
 }
