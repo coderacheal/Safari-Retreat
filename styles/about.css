@@ -134,6 +134,21 @@ main {
   left: 0;
 }
 
+@media (min-width: 321px) {
+  main {
+    width: 100%;
+  }
+
+  .navbar-desktop {
+    width: 100%;
+  }
+
+  .social-media-icons {
+    display: flex;
+    height: 20px;
+    background-color: aqua;
+  }
+}
 
 
 /* welcome  */
