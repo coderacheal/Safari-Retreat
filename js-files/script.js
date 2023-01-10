@@ -33,7 +33,7 @@ const speakers = [
 ];
 
 
-const speakersDiv = document.querySelector('.featured-speakers-div');
+const speakersDiv = document.querySelector('.dynamic-speakers');
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-links-ul');
 const navLinks = document.querySelectorAll('.nav-links');
