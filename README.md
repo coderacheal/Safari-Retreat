@@ -23,7 +23,7 @@
 # 📖 [Safari Retreat] <a name="about-project"></a>
 
 
-**Portfolio** is a responsive web design that contains projects I have done
+**Safari Retreat** is a responsive web design of a safari retreat in Nairobi Kenya in January 2022
 
 ## 🛠 Built With <a name="HTML"></a>
 
@@ -68,7 +68,7 @@
 
 - [Live Demo Link](https://coderacheal.github.io/)
 
-Please note that this link is not yet available
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -195,10 +195,6 @@ main {
     padding: 5px;
   }
 
-  /* .nav-links {
-    color: black;
-  } */
-
   .nav-links:hover {
     color: red;
     background-color: rgb(255, 255, 255);
@@ -368,14 +364,12 @@ main {
 
   .event-name {
     font-size: 50px;
-    width: 80%;
+    width: 90%;
   }
 
   .date {
     font-size: 32px;
     font-weight: bold;
-
-    /* color: rgb(100, 98, 98); */
   }
 
   .date-and-tourism {
@@ -402,8 +396,8 @@ main {
   }
 
   .event-name {
-    font-size: 70px;
-    width: 55%;
+    font-size: 80px;
+    width: 65%;
   }
 
   .date {
