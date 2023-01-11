@@ -5,28 +5,28 @@ const speakers = [
   speakerEducation: 'Berkham Professor of Enterpreneurial Legal Studies at Harvard Law',
   speakerAccolades: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006'
   },
-  {speakerName: 'Trevoh Noah',
-  speakerImage: 'images/trevoh.jpg',
+  {speakerName: 'Chimamanda Adichie Ngozi',
+  speakerImage: 'images/chimamandi.jpg',
   speakerEducation: 'Berkham Professor of Enterpreneurial Legal Studies at Harvard Law',
   speakerAccolades: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006'
   },
-  {speakerName: 'Trevoh Noah',
-  speakerImage: 'images/trevoh.jpg',
+  {speakerName: 'Maps Mapoyane',
+  speakerImage: 'images/maps.jpg',
   speakerEducation: 'Berkham Professor of Enterpreneurial Legal Studies at Harvard Law',
   speakerAccolades: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006'
   },
-  {speakerName: 'Trevoh Noah',
-  speakerImage: 'images/trevoh.jpg',
+  {speakerName: 'Nana Ama McBrown',
+  speakerImage: 'images/mcbrown.jpeg',
   speakerEducation: 'Berkham Professor of Enterpreneurial Legal Studies at Harvard Law',
   speakerAccolades: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006'
   },
-  {speakerName: 'Trevoh Noah',
-  speakerImage: 'images/trevoh.jpg',
+  {speakerName: ' Nomzamo Mbatha',
+  speakerImage: 'images/grown-woman.jpg',
   speakerEducation: 'Berkham Professor of Enterpreneurial Legal Studies at Harvard Law',
   speakerAccolades: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006'
   },
-  {speakerName: 'Trevoh Noah',
-  speakerImage: 'images/trevoh.jpg',
+  {speakerName: 'Miss Universe',
+  speakerImage: 'images/miss-universe.jpg',
   speakerEducation: 'Berkham Professor of Enterpreneurial Legal Studies at Harvard Law',
   speakerAccolades: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006'
   }, 
