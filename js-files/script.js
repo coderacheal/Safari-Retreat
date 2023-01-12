@@ -3,7 +3,7 @@ const speakers = [
     speakerName: 'Trevoh Noah',
     speakerImage: 'images/trevoh.jpg',
     speakerEducation: 'Host of the daily show, Trevor rose to stardom overnigth as a late night show host',
-    speakerAccolades: 'Trevoh Noah rise came as a shock to very few little. This South African\'s huour and with was evident very early on',
+    speakerAccolades: 'Trevoh Noah rise came as a shock to very few little. This South African\'s humour and wit were evident very early on',
   },
   {
     speakerName: 'Chimamanda Adichie Ngozi',
