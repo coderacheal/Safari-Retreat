@@ -50,12 +50,11 @@ main {
 
 .fa-facebook-f {
   color: white;
-  margin: 8px;
+  margin-right: 10px;
 }
 
 .fa-twitter {
   color: white;
-  margin: 8px;
 }
 
 .nav-links-ul {
@@ -70,8 +69,6 @@ main {
   top: 70px;
   gap: 0;
   flex-direction: column;
-
-  /* background-color: #ec5242; */
   width: 320px;
   transition: 0.3s;
 }
@@ -101,8 +98,6 @@ main {
 .logo {
   display: none;
   text-decoration: none;
-
-  /* vertical-align: center; */
 }
 
 .hamburger {
@@ -174,7 +169,7 @@ main {
     display: flex;
     border-radius: 50%;
     height: 65px;
-    margin-left: 250px;
+    margin-left: 15%;
   }
 
   .nav-links-ul {
@@ -209,11 +204,16 @@ main {
     color: black;
   }
 
+  .individual-social-media-icons {
+    padding: 5px;
+  }
+
   .individual-social-media-icons a {
     color: white;
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     margin: 0 10px;
+    text-align: center;
   }
 
   .nav-links a:hover {
@@ -238,7 +238,15 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    margin-right: 13%;
     margin-top: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    margin-left: 45%;
   }
 }
 
@@ -270,12 +278,14 @@ main {
 }
 
 .akwaaba {
+  font-family: 'Lato', sans-serif;
   font-size: 19px;
   margin: 15px 0 15px 0;
   color: #ec5242;
 }
 
 .event-name {
+  font-family: 'Lato', sans-serif;
   width: 90%;
   font-size: 28px;
   font-weight: 700;
@@ -304,6 +314,22 @@ main {
   width: 100%;
   margin-bottom: 30px;
   padding-bottom: 30px;
+}
+
+@media (min-width: 600px) {
+  .welcome-section-container {
+    width: 80%;
+    margin: 0 10% 0 10%;
+    padding-bottom: 40px;
+  }
+
+  .akwaaba {
+    font-size: 22px;
+  }
+
+  .event-name {
+    font-size: 30px;
+  }
 }
 
 @media (min-width: 768px) {

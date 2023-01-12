@@ -168,7 +168,7 @@ main {
     display: flex;
     border-radius: 50%;
     height: 65px;
-    margin-left: 250px;
+    margin-left: 25%;
   }
 
   .nav-links-ul {
@@ -201,6 +201,10 @@ main {
     text-decoration: none;
     height: 100%;
     color: black;
+  }
+
+  .individual-social-media-icons {
+    padding: 5px;
   }
 
   .individual-social-media-icons a {
@@ -237,12 +241,17 @@ main {
 
   .fa-facebook-f {
     color: white;
-    margin: 8px;
+    margin-right: 10px;
   }
 
   .fa-twitter {
     color: white;
-    margin: 8px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    margin-left: 45%;
   }
 }
 
@@ -276,6 +285,7 @@ main {
 }
 
 .akwaaba {
+  font-family: 'Lato', sans-serif;
   font-size: 19px;
   margin: 15px 0 15px 0;
   color: #ec5242;
@@ -783,6 +793,12 @@ main {
   display: none;
 }
 
+@media (min-width: 769px) {
+  .rights-reserved {
+    display: flex;
+  }
+}
+
 /* Partner */
 
 .partners {
@@ -921,6 +937,12 @@ main {
 
   .rights-reserved {
     display: flex;
+    flex-direction: row;
+    row-gap: 50px;
+  }
+
+  .some-rights {
+    margin-left: 10px;
   }
 
   .footer-copyright p {
