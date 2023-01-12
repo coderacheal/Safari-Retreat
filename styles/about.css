@@ -26,6 +26,7 @@ main {
 
 .navbar-desktop {
   background-image: url('/images/safari.jpg');
+  background-color: white;
   width: 320px;
   min-height: 70px;
   position: fixed;
@@ -599,7 +600,7 @@ main {
   width: 100%;
   height: 200px;
   background-color: white;
-  background-image: url('/images//resort.jpg');
+  background-image: url('./images/resort.jpg');
   background-position: center;
 }
 
@@ -609,7 +610,7 @@ main {
   width: 100%;
   height: 200px;
   background-color: white;
-  background-image: url('/images/The-Masai-Tribe.jpg');
+  background-image: url('./images/The-Masai-Tribe.jpg');
   background-position: center;
 }
 
