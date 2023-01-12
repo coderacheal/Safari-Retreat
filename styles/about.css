@@ -600,7 +600,7 @@ main {
   width: 100%;
   height: 200px;
   background-color: white;
-  background-image: url('/images/resort.jpg');
+  background-image: url('../resort.jpg');
   background-position: center;
 }
 
@@ -610,7 +610,7 @@ main {
   width: 100%;
   height: 200px;
   background-color: white;
-  background-image: url('/images/The-Masai-Tribe.jpg');
+  background-image: url('/masai-tribe.jpg');
   background-position: center;
 }
 
