@@ -94,7 +94,7 @@ Clone this repository to your desired folder:
 
   cd my-folder
   
-  git clone https://github.com/coderacheal/Portfolio.git 
+  git clone https://github.com/coderacheal/Safari-Retreat.git 
 
 Once done, open the index.html file in live server
 
@@ -187,7 +187,7 @@ Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07
 
 Watch Loom video [here](https://www.loom.com/share/f56d5b1cc0fe4ae79ff354ae8e5d9d53)
 
-p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 📝 License <a name="license"></a>
