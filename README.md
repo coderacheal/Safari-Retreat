@@ -17,13 +17,14 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
+- [🙏 Technical Dodumentaion](#technical-documentation)
 - [📝 License](#license)
 
 
 # 📖 [Safari Retreat] <a name="about-project"></a>
 
 
-**Portfolio** is a responsive web design that contains projects I have done
+**Safari Retreat** is a responsive web design of a safari retreat in Nairobi Kenya in January 2022
 
 ## 🛠 Built With <a name="HTML"></a>
 
@@ -57,8 +58,8 @@
 
 ### Key Features <a name="Mobile Version of Portfolio"></a>
 
-- **Project tiles**
-- **Interactive icons**
+- **TWebsite has an interactive logo that takes you to the home page.**
+- **Has two pages on both the moblie and desktop version.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,7 +94,7 @@ Clone this repository to your desired folder:
 
   cd my-folder
   
-  git clone https://github.com/coderacheal/Portfolio.git 
+  git clone https://github.com/coderacheal/Safari-Retreat.git 
 
 Once done, open the index.html file in live server
 
@@ -174,15 +175,19 @@ Feel free to check the [issues page](../../issues/).
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+Design Credit
 
-I would like to thank Web Bos for his tutorials on flexbox
+Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
+## Technical Documentation <a name="technical-documentation"></a>
 
+Watch Loom video [here](https://www.loom.com/share/f56d5b1cc0fe4ae79ff354ae8e5d9d53)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 📝 License <a name="license"></a>
@@ -192,3 +197,5 @@ This project is [MIT](./LICENSE) licensed.
 _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+

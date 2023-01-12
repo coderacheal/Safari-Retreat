@@ -1,0 +1,3818 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Data Visualization: What it is and why we use it</title>
+    <meta name="keywords" content="Guides"/>
+    
+    <meta name="template" content="interior-page"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--  Open graph tags -->
+<meta property="og:image" content="https://www.microstrategy.com/content/dam/website-assets/website-images/hero-banners/generic/laptop-on-desk-with-espresso-and-sketchbook.jpg"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="MicroStrategy"/>
+<meta property="og:title" content="Data Visualization: What it is and why we use it"/>
+<meta property="fb:page_id" content="18991493475"/>
+<meta property="og:url" content="https://www.microstrategy.com/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it"/>
+
+      
+<!--  Twitter tags -->
+<meta property="twitter:title" content="Data Visualization: What it is and why we use it"/>
+<meta property="twitter:card" content="summary_large_image"/>
+<meta property="twitter:site" content="@MicroStrategy"/>
+<meta property="twitter:url" content="https://www.microstrategy.com/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it"/>
+<meta property="twitter:creator" content="@MicroStrategy"/>
+<meta property="twitter:image" content="https://www.microstrategy.com/content/dam/website-assets/website-images/hero-banners/generic/laptop-on-desk-with-espresso-and-sketchbook.jpg"/>
+<meta property="twitter:account_id" content="375220690120499200"/>
+
+
+
+<!-- Schema.org Corporation -->
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"Corporation","@id":"https://www.microstrategy.com","legalName":"MicroStrategy, Inc.","tickerSymbol":"MSTR","logo":"https://www.microstrategy.com/content/dam/dev-images/ui-icons/microstrategy-logo_red.svg","description":"MicroStrategy's business analytics and mobility platform helps enterprises build and deploy analytics and mobility apps to transform their business.","url":"https://www.microstrategy.com","contactPoint":[{"@type":"ContactPoint","telephone":"+1-703-848-8600","contactType":"customer support"},{"@type":"ContactPoint","telephone":"+1-888-537-8135","contactType":"sales"},{"@type":"ContactPoint","telephone":"+1-703-848-8700","contactType":"technical support"}],"address":{"@type":"PostalAddress","streetAddress":"1850 Towers Crescent Plaza","addressCountry":"US","addressRegion":"VA","addressLocality":"Tysons Corner","postalCode":"22182"},"sameAs":["https://twitter.com/MicroStrategy","https://www.linkedin.com/company/3643","https://plus.google.com/+microstrategy","https://www.facebook.com/MicroStrategy","https://www.youtube.com/user/MicroStrategyBI","https://www.instagram.com/microstrategy","https://en.wikipedia.org/wiki/MicroStrategy","https://www.wikidata.org/wiki/Q1192211","https://www.crunchbase.com/organization/microstrategy"],"founder":"Michael J. Saylor and Sanju Bansal","foundingDate":"1989","foundingLocation":"Wilmington, DE","location":{"@type":"Place","name":"MicroStrategy","hasMap":"https://www.google.com/maps/place/MicroStrategy/@38.9156371,-77.2229218,17z/data=!3m1!4b1!4m5!3m4!1s0x89b64aedb0c2299d:0x3c42d697a6f9587b!8m2!3d38.9156371!4d-77.2207331","telephone":"+1-703-848-8600","image":{"@type":"ImageObject","url":"https://www.microstrategy.com/content/dam/dev-images/ui-icons/microstrategy-logo_red.svg","height":"33","width":"200"},"logo":{"@type":"ImageObject","url":"https://www.microstrategy.com/content/dam/dev-images/ui-icons/microstrategy-logo_red.svg","height":"33","width":"200"},"geo":{"@type":"GeoCoordinates","latitude":"38.9159794","longitude":"-77.2232951"},"address":{"@type":"PostalAddress","streetAddress":"1850 Towers Crescent Plaza","addressCountry":"US","addressRegion":"VA","addressLocality":"Tysons Corner","postalCode":"22182"}}}</script>
+<!-- Schema.org Search Box -->
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://www.microstrategy.com","potentialAction":{"@type":"SearchAction","target":"https://www.microstrategy.com/en/search/search?searchtext={search_term}&organic-sitelinks","query-input":"required name=search_term"}}</script>
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+    
+    <link rel="canonical" href="https://www.microstrategy.com/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it"/>
+
+
+
+
+		<link rel="alternate" href="https://www.microstrategy.com/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it" hreflang="en"/>
+
+
+
+
+<link href="https://use.typekit.net/cjr2qkp.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://static.cloud.coveo.com/searchui/v2.10090/css/CoveoFullSearch.min.css"/>
+
+
+
+
+
+<!-- Google Tag Manager GTM-WLQTSS START -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WLQTSS');
+</script>
+<!-- Google Tag Manager END-->
+
+<!-- Google Tag Manager GTM-MX4Z68T START-->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MX4Z68T');</script>
+<!-- Google Tag Manager END-->
+
+<!-- Google tag G-LKWCFQW9XG Start (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LKWCFQW9XG"></script>
+<script> window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+gtag('config', 'G-LKWCFQW9XG'); </script>
+<!-- Google tag End -->
+
+<!--  Munchkin script START-->
+<script type="text/javascript">
+	(function() {
+		var didInit = false;
+		function initMunchkin() {
+			if(didInit === false) {
+				didInit = true;
+				Munchkin.init('750-TDG-583');
+			}
+		}
+		var s = document.createElement('script');
+		s.type = 'text/javascript';
+		s.async = true;
+		s.src = '//munchkin.marketo.net/munchkin.js';
+		s.onreadystatechange = function() {
+			if (this.readyState == 'complete' || this.readyState == 'loaded') {
+				initMunchkin();
+			}
+		};
+		s.onload = initMunchkin;
+		document.getElementsByTagName('head')[0].appendChild(s);
+	})();
+</script>
+<!--  Munchkin script END-->
+
+<!-- Analytics Data Layer -->
+<script type="text/javascript">
+    var digitalData = digitalData || {};
+    // PAGE MIC-231
+    digitalData.page = digitalData.page || {};
+    digitalData.page.category = digitalData.page.category || {};
+    digitalData.page.site = digitalData.page.site || {};
+    digitalData.page.site.siteName = "Microstrategy";
+
+    digitalData.form = digitalData.form || {};
+
+    digitalData.page.attributes = digitalData.page.attributes || {};
+    digitalData.page.attributes.analytics = digitalData.page.attributes.analytics || {};
+
+    digitalData.pageName = digitalData.page || {};
+    digitalData.event = digitalData.event || {};
+
+    /* TODO
+    digitalData.page.pageInfo.level1: 'home'.level2: 'news'.level3: 'article title'.level4: 'article sub page'
+    */
+    digitalData.page.pageInfo = digitalData.page.pageInfo || {};
+
+
+    var lastElement = (window.location.pathname.split('/').length) - 1;
+    digitalData.page.pageInfo.pageName = window.location.pathname.split('/')[lastElement].split('.')[0].replace(/-/g, ' ');
+
+    var pathInt = 0;
+    var cleanPath;
+    if (window.location.pathname.indexOf("/content/") > -1) {
+        cleanPath = window.location.pathname.replace("/content", "");
+    } else {
+        cleanPath = window.location.pathname;
+    }
+
+    if (cleanPath.split('/').length >= pathInt) {
+        digitalData.page.pageInfo.level1 = cleanPath.split('/')[pathInt].split('.')[0].replace(/-/g, ' ')+' homepage'; // en homepage
+        digitalData.pageName = cleanPath.split('/')[pathInt].split('.')[0].replace(/-/g, ' ');
+        pathInt ++;
+    }
+    if (cleanPath.split('/').length > pathInt) {
+        digitalData.page.pageInfo.language = cleanPath.split('/')[pathInt].split('.')[0].replace(/-/g, ' ');
+        digitalData.pageName = digitalData.pageName + "|"+ cleanPath.split('/')[pathInt].split('.')[0].replace(/-/g, ' ');
+        pathInt ++;
+
+    }
+    if (cleanPath.split('/').length > pathInt) {
+        digitalData.page.pageInfo.level2 = cleanPath.split('/')[pathInt].split('.')[0].replace(/-/g, ' ');
+        digitalData.pageName = digitalData.pageName + "|"+ cleanPath.split('/')[pathInt].split('.')[0].replace(/-/g, ' ');
+        pathInt ++;
+
+    }
+    if (cleanPath.split('/').length > pathInt) {
+        digitalData.page.pageInfo.level3 = cleanPath.split('/')[pathInt].split('.')[0].replace(/-/g, ' ');
+        digitalData.pageName = digitalData.pageName + "|"+ cleanPath.split('/')[pathInt].split('.')[0].replace(/-/g, ' ');
+        pathInt ++;
+    }
+    if (cleanPath.split('/').length > pathInt) {
+        digitalData.page.pageInfo.level4 = cleanPath.split('/')[pathInt].split('.')[0].replace(/-/g, ' ');
+        digitalData.pageName = digitalData.pageName + "|"+ cleanPath.split('/')[pathInt].split('.')[0].replace(/-/g, ' ');
+        pathInt ++;
+    }
+
+    digitalData.pageName = "microstrategy" + "|" + digitalData.pageName;
+
+    // date
+    var date = new Date();
+    digitalData.event.timeStamp = date;
+    digitalData.page.attributes.pageURL = window.location.href;
+</script>
+
+
+<script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	_linkedin_partner_id = "969850";
+	window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+	window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+	(function() {
+		var s = document.getElementsByTagName("script")[0];
+		var b = document.createElement("script");
+		b.type = "text/javascript";
+		b.async = true;
+		b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+		s.parentNode.insertBefore(b, s);
+	})();
+</script>
+<noscript>
+	<img loading="lazy" height="1" width="1" style="display: none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=969850&fmt=gif"/>
+</noscript>
+
+
+
+<script src="https://cdn.cookielaw.org/langswitch/86fec731-737b-4bf3-8a1a-91e82a227852.js" type="text/javascript" charset="UTF-8" async></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+
+
+<!-- Adobe Launch Integration MS-->
+
+    
+        <script src="//assets.adobedtm.com/4518b0981c4a/b6ef89f61705/launch-8675cb0c3a91.min.js" async></script>
+    
+
+
+
+	
+    
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite/csrf.a9dcac4698709ca8e1cbc88363cf0793.js"></script>
+
+
+
+	
+	
+	
+    
+<script src="/etc.clientlibs/microstrategy/clientlibs/auth.3bb8fe69bad7dee419fbcd26c60fa2af.js"></script>
+
+
+
+	
+    
+<link rel="stylesheet" href="/etc.clientlibs/microstrategy/components/content/course/clientlib.b5d593ae1224838c3a7706b19fe1209a.css" type="text/css">
+<link rel="stylesheet" href="/etc.clientlibs/microstrategy/clientlibs/clientlib-base.f80397dccec7205a76be7b920524f6d8.css" type="text/css">
+
+
+
+    
+    
+<link rel="stylesheet" href="/etc.clientlibs/microstrategy/components/content/coveo/clientlib-coveo.bcf8123285d7b0a1e9ddd9adba67c4d4.css" type="text/css">
+
+
+
+	
+    
+<script src="/etc.clientlibs/microstrategy/clientlibs/clientlib-jquery.7c14a783dfeb3d238ccd3edd840d82ee.js"></script>
+
+
+
+
+    
+    
+    
+
+    
+
+    
+    
+    
+
+    
+</head>
+<body data-wcmmode-edit="'false'" data-wcmmode-preview="'false'" class="interior page basicpage showNav  " data-videoconsumptionenabled="false" data-rewardpercentage="100">
+<!-- GTM pixel GTM-WLQTSS-->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLQTSS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- GTM pixel GTM-MX4Z68T -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MX4Z68T" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- GTM pixel G-LKWCFQW9XG -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-LKWCFQW9XG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<input type="hidden" id="pageOfferID"/>
+<input type="hidden" id="visibility"/>
+<input type="hidden" id="redirectUrl"/>
+
+
+
+    
+
+
+
+    
+<div class="root responsivegrid">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-experiencefragment">
+
+    
+
+
+
+<div class="xf-content-height">
+    
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="header parbase aem-GridColumn aem-GridColumn--default--12">
+
+
+<header id="site-header" class="cmp-header">
+	
+	<section id="global-banner">
+		<div class="grid full-width no-padding ha-between va-center bg-img" style="background-image:url(/content/dam/website-assets/website-images/hero-banners/global-header-banner-backgrounds/green-gradient-top.jpg)">
+			
+			<div class="cell fill ta-center">
+				<p>Agile Analytics, Superior Security. Experience MicroStrategy Cloud for Government. &gt; <a href="/en/solutions/federal-government#fedrampauth">Learn more about FedRAMP</a></p>
+
+			</div>
+			<div class="cell">
+				<button type="button" class="close">
+					<span class="fas fa-times"></span>
+				</button>
+			</div>
+		</div>
+		<script>
+		function closeSiteAd()
+		{
+			$('body').removeClass('siteAdActive').addClass('siteAdClosed');
+		}
+		closeSiteAd();
+		$(document).ready(function()
+		{
+			if ($.cookie('GlobalAd') == null) {
+				$.cookie('GlobalAd', 'true', { domain: window.location.hostname, path: '/' });
+			}
+	
+			if ($.cookie('GlobalAd') == 'true')
+			{
+				$('body').removeClass('siteAdClosed').addClass('siteAdActive');
+			}
+			else
+			{
+				closeSiteAd();
+			}
+			
+			$('#global-banner .close').click(function()
+			{
+				$.cookie('GlobalAd', 'false', { domain: window.location.hostname, path: '/' });
+				closeSiteAd();
+			});
+		});
+		</script>
+	</section>
+	
+	<section id="site-masthead" class="grid full-width no-padding ha-between va-center">
+	
+		<div id="site-branding" class="cell">
+			<a id="site-logo" href="/en">
+				<img loading="lazy" src="/content/dam/dev-images/ui-icons/microstrategy-logo_red.svg" alt="MicroStrategy" class="logo"/>
+				<span id="site-tagline" class="xl-show">Intelligence Everywhere</span>
+			</a>
+		</div>
+		
+		<div id="site-search" class="cell fill m-show">
+			<div id="searchbox" data-searchPageURL='/en/search-results'>
+				<div class="CoveoSearchbox" data-placeholder="Search"></div>
+			</div>
+		</div>
+		
+		<div id="site-cta" class="cell m-show">
+			
+			
+				
+<div class="cmp-experiencefragment">
+
+    
+
+
+
+<div class="xf-content-height">
+    
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-btn primary s-show aem-GridColumn aem-GridColumn--default--12">
+
+    
+        <a id="expertNowButtonTrigger" data-query="now=expert" data-href="https://resource.microstrategy.com/ResourceCenter/ExpertNow.aspx" data-target="_blank" target="_blank" onclick="checkButtonType(event,this)" data-gate="true" data-analyticsid="Talktoanexpert_001">
+            <span>
+            	Talk to an expert
+           	</span>
+        </a>
+    
+    
+
+
+    
+    
+</div>
+<div class="marketo-form aem-GridColumn aem-GridColumn--default--12">
+
+<div class="marketo-form-data" data-sfid="1">
+		
+		
+			
+
+		<div class="cmp-btn primary">
+			<a id="startNowLightboxTrigger" data-analyticsid="Top1" data-href="#startNowLightbox" onclick="checkLoginBeforeSubmit(this)" data-query="now=start" class="lightbox">Get started</a>
+		</div>
+
+<div id="startNowLightbox" class="lightboxContent" style="display:none">
+	<div id="startNowCallout" class="callout">
+		<button id="lightboxClose" onclick="closeLightbox(this)" type="button" class="close"><span class="fas fa-times"></span></button>
+		<div class="initialScreen">
+			
+			<form class="startNowForm">
+				<div class="bg-img bg-red xs-ta-c" style="border-radius: 8px 8px 0px 0px; background-image:url(/content/dam/website-assets/website-images/hero-banners/modal-window-header-backgrounds/get-started-banner-bkg.jpg);">
+					<div class="grid ha-c ta-c">
+						<div class="cell sp-s">
+							<p class="h2 txt-bold"><span class="icon icon-check-circle_medium"></span><span>Let&#39;s get started</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<div class="checkboxGrid grid">
+						<div class="cell xxs-12 s-4 sp-s">
+							<p class="txt-bold">What are you interested in</p>
+						</div>
+						<div class="cell fill">
+							<fieldset class="grid sp-s">
+								<div class="cell xxs-12 xs-6 mobileColumnOrder">
+									<input id="start-a-project-1" name="startNow" data-value="7014W000001iQV3QAM" type="checkbox"/> 
+									<label for="start-a-project-1" data-group="project" class="no-style">HyperIntelligence®</label>
+								</div>
+							
+								<div class="cell xxs-12 xs-6 mobileColumnOrder">
+									<input id="start-a-project-2" name="startNow" data-value="7014W000001iQVDQA2" type="checkbox"/> 
+									<label for="start-a-project-2" data-group="project" class="no-style">Cloud</label>
+								</div>
+							
+								<div class="cell xxs-12 xs-6 mobileColumnOrder">
+									<input id="start-a-project-3" name="startNow" data-value="7014W000001iQV8QAM" type="checkbox"/> 
+									<label for="start-a-project-3" data-group="project" class="no-style">Embedded analytics</label>
+								</div>
+							
+								<div class="cell xxs-12 xs-6 mobileColumnOrder">
+									<input id="start-a-project-4" name="startNow" data-value="7014W000001iQVNQA2" type="checkbox"/> 
+									<label for="start-a-project-4" data-group="project" class="no-style">Consulting</label>
+								</div>
+							
+								<div class="cell xxs-12 xs-6 mobileColumnOrder">
+									<input id="start-a-project-5" name="startNow" data-value="7014W000001iQV9QAM" type="checkbox"/> 
+									<label for="start-a-project-5" data-group="project" class="no-style">Business intelligence</label>
+								</div>
+							
+								<div class="cell xxs-12 xs-6 mobileColumnOrder">
+									<input id="start-a-project-6" name="startNow" data-value="7012R000000urgAQAQ" type="checkbox"/> 
+									<label for="start-a-project-6" data-group="project" class="no-style">Become a partner</label>
+								</div>
+							</fieldset>
+						</div>
+					</div>
+					<div class="checkboxGrid grid">
+						<div class="cell xxs-12 s-4 sp-s">
+							<p class="txt-bold">What would you like to do</p>
+						</div>
+						<div class="cell fill">
+							<fieldset class="grid sp-s">
+								<div class="cell xxs-12 xs-6 mobileColumnOrder">
+									<span class="labelContainer">
+										<input id="connect-with-us-1" name="startNow" data-value="7014W000001iP5pQAE" type="checkbox"/> 
+										<label for="connect-with-us-1" data-group="project" class="no-style">Schedule a meeting</label>
+										<span class="tooltipContainer">
+											<img src="/content/dam/website-assets/website-images/icons-badges/icons/info_small.svg"/>
+											<span class="tooltipText">Schedule a meeting with a member of our Customer Success team. </span>
+										</span>
+									</span>
+								</div>
+							
+								<div class="cell xxs-12 xs-6 mobileColumnOrder">
+									<span class="labelContainer">
+										<input id="connect-with-us-2" name="startNow" data-value="7014W000001iP5jQAE" type="checkbox"/> 
+										<label for="connect-with-us-2" data-group="project" class="no-style">Get training and support</label>
+										<span class="tooltipContainer">
+											<img src="/content/dam/website-assets/website-images/icons-badges/icons/info_small.svg"/>
+											<span class="tooltipText">Got a product question? This option is for you.</span>
+										</span>
+									</span>
+								</div>
+							
+								<div class="cell xxs-12 xs-6 mobileColumnOrder">
+									<span class="labelContainer">
+										<input id="connect-with-us-3" name="startNow" data-value="7014W000001iP5qQAE" type="checkbox"/> 
+										<label for="connect-with-us-3" data-group="project" class="no-style">Request a demo</label>
+										<span class="tooltipContainer">
+											<img src="/content/dam/website-assets/website-images/icons-badges/icons/info_small.svg"/>
+											<span class="tooltipText">Schedule a live demonstration of our analytics and BI platform.</span>
+										</span>
+									</span>
+								</div>
+							
+								<div class="cell xxs-12 xs-6 mobileColumnOrder">
+									<span class="labelContainer">
+										<input id="connect-with-us-4" name="startNow" data-value="7012R000000urflQAA" type="checkbox"/> 
+										<label for="connect-with-us-4" data-group="project" class="no-style">Upgrade your platform</label>
+										<span class="tooltipContainer">
+											<img src="/content/dam/website-assets/website-images/icons-badges/icons/info_small.svg"/>
+											<span class="tooltipText">Work with our experts to upgrade to the latest MicroStrategy, quickly and with no disruption to your users. </span>
+										</span>
+									</span>
+								</div>
+							
+								<div class="cell xxs-12 xs-6 mobileColumnOrder">
+									<span class="labelContainer">
+										<input id="connect-with-us-5" name="startNow" data-value="7014W000001uVcgQAE" type="checkbox"/> 
+										<label for="connect-with-us-5" data-group="project" class="no-style">Request a pilot</label>
+										<span class="tooltipContainer">
+											<img src="/content/dam/website-assets/website-images/icons-badges/icons/info_small.svg"/>
+											<span class="tooltipText">Test-drive our platform with a production-ready BI solution built to your requirements.</span>
+										</span>
+									</span>
+								</div>
+							
+								<div class="cell xxs-12 xs-6 mobileColumnOrder">
+									<span class="labelContainer">
+										<input id="connect-with-us-6" name="startNow" data-value="7014W0000014XZvQAM" type="checkbox"/> 
+										<label for="connect-with-us-6" data-group="project" class="no-style">Request pricing</label>
+										<span class="tooltipContainer">
+											<img src="/content/dam/website-assets/website-images/icons-badges/icons/info_small.svg"/>
+											<span class="tooltipText">Get pricing information for your analytics needs.</span>
+										</span>
+									</span>
+								</div>
+							</fieldset>
+						</div>
+					</div>
+					<div class="textareaGrid grid">
+						<div class="cell xxs-12 s-4 sp-s">
+							<p class="txt-bold">Add a message</p>
+						</div>
+						<div class="cell fill">
+							<div class="grid sp-s">
+								<div class="cell xxs-12">
+									<textarea maxlength="500" id="startNowMessage" name="startNowMessage" placeholder="Briefly describe your question or area of interest."></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="buttonGrid grid">
+						<div class="cell xxs-12">
+							<div class="cmp-btn disabled">
+								<button type="button" onclick="startNowFormSubmit(this)">Let&#39;s go</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	    <div class="successScreen xs-ta-c" style="display:none">
+			
+			<div class="content">
+				<div><div class="experience-fragment xfpage page basicpage">
+
+    
+
+
+
+<div class="xf-content-height">
+    
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <h5>We’re ready to work with you.</h5>
+<p>Our team will reach out soon to connect you to what you need.</p>
+<p><strong>Explore these resources to get ready:</strong></p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+
+    
+</div>
+
+</div></div>
+</div>
+				
+					<div class="successLinks grid xs-ha-c sp-s">
+						
+							<div class="cell">
+								<div class="cmp-btn text">
+									<a href="/en/resources/research-and-reports">Read the latest analyst reviews</a>
+								</div>
+							</div>
+						
+					
+						
+							<div class="cell">
+								<div class="cmp-btn text">
+									<a href="/en/solutions/customer-stories">Watch customer success stories</a>
+								</div>
+							</div>
+						
+					</div>
+				
+			</div>
+		</div>
+		<div class="errorScreen" style="display:none">
+			
+			<div class="content">
+				<div>
+
+<div class="marketo-form-data">
+		
+		
+			
+			
+			
+			
+			
+			
+			
+		
+</div></div>
+			</div>
+		</div>
+		<script>
+		$(document).ready(function(){
+	        $('input[name="startNow"] + label').click(function(){
+
+	        	var checkedBox = false,
+	        		$submitButton = $(this).closest('.checkboxGrid').siblings('.buttonGrid').find('.cmp-btn');
+
+	        	setTimeout(function(){
+	        		$('input[name="startNow"]').each(function(){
+		        		if ($(this).is(':checked'))
+		        		{
+		        			checkedBox = true;
+		        		}
+		        	});
+		        	if (checkedBox)
+		        	{
+		        		$submitButton.addClass('primary').removeClass('disabled');
+		        	}
+		        	else
+		        	{
+						$submitButton.addClass('disabled').removeClass('primary');
+		        	}
+	        	}, 100);
+	        });
+		});
+		</script>
+	</div>
+</div>
+
+    
+<link rel="stylesheet" href="/etc.clientlibs/microstrategy/components/content/marketo-form/marketo-form.b91cb66cdade75b595c398eead26e583.css" type="text/css">
+
+
+
+			
+			
+			
+			
+			
+			
+		
+</div></div>
+
+    
+</div>
+</div>
+
+    
+</div>
+
+</div></div>
+
+    
+
+			
+		</div>
+		
+		<div class="right-aligned-mobile-container">
+			<div id="siteLogin" class="cell">
+				<a href="javascript:void(0)" class="sign-in" style="display: none;">Sign in</a>
+<div class="has-dropdown">
+    <button type="button" class="dropdown-toggle">
+        <span class="avatar size-s round" style="display: none;"></span>
+        <div class="loadingSpinner"></div>
+    </button>
+    
+    <div class="mdc-menu-surface--anchor" style="right: 5px; top: 25px;">
+        <div class="loginMenu mdc-menu mdc-menu-surface" id="login-menu">
+            <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1" style="min-width: 245px; padding: 1rem;">
+                <div class="loginMenuContainer h5">
+                    <img loading="lazy" src="/content/dam/dev-images/ui-icons/microstrategy-m-icon-circle.svg" class="icon" style="margin: 0;" alt="Account Logo"/>
+                    <div class="loginMenuInfoContent">
+                        <span class="userName"></span>
+                        <span class="userEmail"></span>
+                    </div>
+                </div>
+                <ul class="account-links no-style">
+                    <li>
+                        <a href="/en/my-account" target="_blank">
+                            
+                            My Account
+                        </a>
+                    </li>
+                    
+                        
+                                
+                                <li style="display: none" data-show-for-employees="false"><a href="https://resource.microstrategy.com/LoginNew/Account/ResetPassword" target="_blank"><img src="/content/dam/dev-images/ui-icons/lock_small.svg" loading="lazy" class="icon"/>Change Password</a></li>
+                        
+                    
+                    <li><a href="javascript:void(0)" class="sign-out">Logout
+                    </a></li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        async function callUserInfo() {
+            try {
+                const userInfo = await getUserInfo();
+                if (userInfo!=null ) {
+                    var initials = userInfo.firstName.charAt(0) + userInfo.lastName.charAt(0);
+                    var profile_img = "https://resource.microstrategy.com/ResourceCenter/graphics/EmployeePictures/"+userInfo.email.substring(0, userInfo.email.indexOf("@"))+'.jpg';
+                    function checkIfImageExists(url, callback) {
+                        const img = new Image();
+                        img.src = url;
+
+                        if (img.complete) {
+                            callback(true);
+                        } else {
+                            img.onload = () => {
+                                callback(true);
+                            };
+
+                            img.onerror = () => {
+                                callback(false);
+                            };
+                        }
+                    }
+                    checkIfImageExists(profile_img, (exists) => {
+                        if (exists) {
+                            $('#siteLogin').find('span.avatar').html("<img class='avatar size-s round' src='"+profile_img+"'>");
+                        } else {
+                            $('#siteLogin').find('span.avatar').html(initials);
+                        }
+                    });
+
+                    $('#siteLogin').find('.loadingSpinner').hide();
+                    $('#siteLogin').find('span.avatar').show();
+                    $('#siteLogin').find('.has-dropdown').show();
+                    $('#siteLogin').find('.has-dropdown .loginMenuContainer span.userName').html(userInfo.firstName + " " + userInfo.lastName);
+                    $('#siteLogin').find('.has-dropdown .loginMenuContainer span.userEmail').html(userInfo.email);
+                    if(isEmployee(userInfo.email)){
+                        $('#siteLogin').find('li[data-show-for-employees="true"]').show();
+                    } else {
+                        $('#siteLogin').find('li[data-show-for-employees="false"]').show();
+                    }
+
+                } else {
+                    $('#siteLogin').find('.loadingSpinner').hide();
+                    $('#siteLogin').find('.sign-in').show();
+                    if (document.getElementsByClassName('icon-dropdown-toggle')[0] !== undefined) {
+                        $('#siteLogin').find('.icon-dropdown-toggle').hide();
+                    }
+                }
+            } 
+            catch(err) {
+                console.log(err);
+            }
+        }
+
+        callUserInfo()
+    });
+
+</script>
+			</div>
+			
+			<div id="site-menu" class="cell m-hide">
+				<div id="menuTrigger">
+					<input type="checkbox" class="toggle" id="ToggleNav"/>
+					<label class="toggle-trigger" for="ToggleNav" title="Menu">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="sr-only">Menu</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	
+	<nav id="site-navigation">
+		<ul class="utility-links no-style">
+			<li class="search-bar m-hide">
+				<div id="searchboxMobile" data-searchPageURL='/en/search-results'>
+					<div class="CoveoSearchbox" data-placeholder="Search"></div>
+				</div>
+			</li>
+			<div id="desktop-nav-menu">
+			<li class="site-navigation-sub-menu-toggle">
+				<a data-is-expertnow-link="false" href="/en/enterprise-analytics" target="_self"> <img loading="lazy" src="/content/dam/dev-images/ui-icons/product-icon.svg" class="icon"/> Enterprise Analytics
+				</a>
+				
+					<div class="mdc-menu-surface--anchor" style="position: fixed; left: 90px;">
+						<div class="site-navigation-sub-menu mdc-menu mdc-menu-surface">
+							<ul class="mstr-nav-submenu no-style">
+									<li>
+										<a data-is-expertnow-sublink="false" href="/en/enterprise-analytics" target="_self" class="  mstr-submenu-item">  Business Intelligence
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/hyperintelligence" target="_self" class="  mstr-submenu-item">  HyperIntelligence
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/business-intelligence/cloud-intelligence" target="_self" class="  mstr-submenu-item">  Cloud
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/product-innovation" target="_self" class="  mstr-submenu-item">  Product Innovation
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/education" target="_self" class="  mstr-submenu-item">  Education
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/consulting" target="_self" class="  mstr-submenu-item">  Consulting
+										</a>
+										
+										
+									</li>
+<li>
+										
+										
+										<div class="cmp-btn primary small submenuCTAButton">
+											<a data-is-expertnow-sublink="false" href="/en/enterprise-analytics?now=start" target="_self">Get started today
+											</a>
+											
+										</div>
+									</li>
+
+							</ul>
+						</div>
+					</div>
+				
+			</li>
+<li class="site-navigation-sub-menu-toggle">
+				<a data-is-expertnow-link="false" href="/en/embedded-analytics" target="_self"> <img loading="lazy" src="/content/dam/dev-images/ui-icons/embedded-icon.svg" class="icon"/> Embedded Analytics
+				</a>
+				
+					
+				
+			</li>
+<li class="site-navigation-sub-menu-toggle">
+				<a data-is-expertnow-link="false" href="/en/solutions" target="_self"> <img loading="lazy" src="/content/dam/dev-images/ui-icons/solutions-icon.svg" class="icon"/> Solutions
+				</a>
+				
+					<div class="mdc-menu-surface--anchor" style="position: fixed; left: 90px;">
+						<div class="site-navigation-sub-menu mdc-menu mdc-menu-surface">
+							<ul class="mstr-nav-submenu no-style">
+									<li>
+										<a data-is-expertnow-sublink="false" href="/en/solutions/financial-services" target="_self" class="  mstr-submenu-item">  Financial Services
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/solutions/healthcare-pharmaceuticals" target="_self" class="  mstr-submenu-item">  Healthcare
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/solutions/retail" target="_self" class="  mstr-submenu-item">  Retail
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/solutions/federal-government" target="_self" class="  mstr-submenu-item">  Government
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/solutions/customer-stories" target="_self" class="  mstr-submenu-item">  Case Study Library
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/solutions/competitive-comparison" target="_self" class="  mstr-submenu-item">  Why MicroStrategy
+										</a>
+										
+										
+									</li>
+<li>
+										
+										
+										<div class="cmp-btn primary small submenuCTAButton">
+											<a data-is-expertnow-sublink="false" href="/en/solutions?now=start" target="_self">Request a pilot
+											</a>
+											
+										</div>
+									</li>
+
+							</ul>
+						</div>
+					</div>
+				
+			</li>
+<li class="site-navigation-sub-menu-toggle">
+				<a data-is-expertnow-link="false" href="/en/resources/events" target="_self"> <img loading="lazy" src="/content/dam/dev-images/ui-icons/events-icon.svg" class="icon"/> Events
+				</a>
+				
+					<div class="mdc-menu-surface--anchor" style="position: fixed; left: 90px;">
+						<div class="site-navigation-sub-menu mdc-menu mdc-menu-surface">
+							<ul class="mstr-nav-submenu no-style">
+									<li>
+										<a data-is-expertnow-sublink="false" href="/en/world-2023" target="_self" class="  mstr-submenu-item">  World 2023
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/resources/events/microworld-2022" target="_self" class="  mstr-submenu-item">  MicroWorld
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/resources/events" target="_self" class="  mstr-submenu-item">  Webinars
+										</a>
+										
+										
+									</li>
+<li>
+										
+										
+										<div class="cmp-btn primary small submenuCTAButton">
+											<a data-is-expertnow-sublink="false" href="/en/resources/events#subscribe" target="_self">Stay informed
+											</a>
+											
+										</div>
+									</li>
+
+							</ul>
+						</div>
+					</div>
+				
+			</li>
+<li class="site-navigation-sub-menu-toggle">
+				<a data-is-expertnow-link="false" href="https://community.microstrategy.com/s/?language=en_US" target="_blank"> <img loading="lazy" src="/content/dam/dev-images/ui-icons/support-community-icon.svg" class="icon"/> Community &amp; Support
+				</a>
+				
+					<div class="mdc-menu-surface--anchor" style="position: fixed; left: 90px;">
+						<div class="site-navigation-sub-menu mdc-menu mdc-menu-surface">
+							<ul class="mstr-nav-submenu no-style">
+									<li>
+										<a data-is-expertnow-sublink="false" href="https://community.microstrategy.com/s/discussions?language=en_US" target="_blank" class="  mstr-submenu-item">  Search Discussions
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="https://community.microstrategy.com/s/support-create-case?language=en_US" target="_blank" class="  mstr-submenu-item">  Open A Case
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="https://support-cases.microstrategy.com/csm/?id=ms_csm_my_lists&table=sn_customerservice_case&view=sp&target_page_id=ms_standard_ticket&filter=active%3Dtrue%5Eu_term_key_renewal_case%3Dfalse%5EcontactDYNAMIC3a3138280f3e10103ff81b41ff767e9f&sel=my_cases" target="_blank" class="  mstr-submenu-item">  View My Cases
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="https://community.microstrategy.com/s/documentation?language=en_US" target="_blank" class="  mstr-submenu-item">  Documentation
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="https://community.microstrategy.com/s/products?language=en_US" target="_blank" class="  mstr-submenu-item">  Product Downloads
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="https://www.microstrategy.com/en/partners" target="_blank" class="  mstr-submenu-item">  Partner Ecosystem
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="https://blog.microstrategy.com/" target="_blank" class="  mstr-submenu-item">  Blog
+										</a>
+										
+										
+									</li>
+<li>
+										
+										
+										<div class="cmp-btn primary small submenuCTAButton">
+											<a data-is-expertnow-sublink="false" href="https://community.microstrategy.com/s/discussions?language=en_US" target="_blank">Ask a question
+											</a>
+											
+										</div>
+									</li>
+
+							</ul>
+						</div>
+					</div>
+				
+			</li>
+<li class="site-navigation-sub-menu-toggle">
+				<a data-is-expertnow-link="false" href="/en/careers" target="_self"> <img loading="lazy" src="/content/dam/dev-images/ui-icons/careers-icon.svg" class="icon"/> Careers
+				</a>
+				
+					
+				
+			</li>
+<li class="site-navigation-sub-menu-toggle">
+				<a data-is-expertnow-link="false" href="/en/investor-relations" target="_self"> <img loading="lazy" src="/content/dam/dev-images/ui-icons/ir-icon.svg" class="icon"/> Investor Relations
+				</a>
+				
+					
+				
+			</li>
+<li class="site-navigation-sub-menu-toggle">
+				<a data-is-expertnow-link="false" href="https://www.hope.com/" target="_blank"> <img loading="lazy" src="/content/dam/dev-images/ui-icons/bitcoin-icon.svg" class="icon"/> Bitcoin
+				</a>
+				
+					
+				
+			</li>
+
+			</div>
+			<div id="mobile-nav-menu">
+				<li class="site-navigation-sub-menu-toggle">
+					
+					<button class="mobile-nav-accordion"> 
+						<div style="display: flex; align-items: center;">
+							<img loading="lazy" src="/content/dam/dev-images/ui-icons/product-icon.svg" class="icon" style="padding-right: 10px;"/> Enterprise Analytics
+						</div>
+					</button>
+					
+					<div class="panel">
+						<div class="site-navigation-sub-menu" style="padding: 0 0 32px 0;">
+							<ul class="mstr-nav-submenu no-style">
+									<li>
+										<a data-is-expertnow-link="false" href="/en/enterprise-analytics" target="_self" class=" mstr-submenu-item">Enterprise Analytics
+										</a>
+									</li>
+									<li>
+										<a data-is-expertnow-sublink="false" href="/en/enterprise-analytics" target="_self" class="  mstr-submenu-item"> Business Intelligence
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/hyperintelligence" target="_self" class="  mstr-submenu-item"> HyperIntelligence
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/business-intelligence/cloud-intelligence" target="_self" class="  mstr-submenu-item"> Cloud
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/product-innovation" target="_self" class="  mstr-submenu-item"> Product Innovation
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/education" target="_self" class="  mstr-submenu-item"> Education
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/consulting" target="_self" class="  mstr-submenu-item"> Consulting
+										</a>
+										
+										
+									</li>
+<li>
+										
+										
+										<div class="cmp-btn primary small submenuCTAButton">
+											<a data-is-expertnow-sublink="false" href="/en/enterprise-analytics?now=start" target="_self">Get started today
+											</a>
+											
+										</div>
+									</li>
+
+							</ul>
+						</div>
+					</div>
+					
+				</li>
+<li class="site-navigation-sub-menu-toggle">
+					
+					
+					<a data-is-expertnow-link="false" href="/en/embedded-analytics" target="_self"> <img loading="lazy" src="/content/dam/dev-images/ui-icons/embedded-icon.svg" class="icon"/> Embedded Analytics
+					</a>
+					
+					
+				</li>
+<li class="site-navigation-sub-menu-toggle">
+					
+					<button class="mobile-nav-accordion"> 
+						<div style="display: flex; align-items: center;">
+							<img loading="lazy" src="/content/dam/dev-images/ui-icons/solutions-icon.svg" class="icon" style="padding-right: 10px;"/> Solutions
+						</div>
+					</button>
+					
+					<div class="panel">
+						<div class="site-navigation-sub-menu" style="padding: 0 0 32px 0;">
+							<ul class="mstr-nav-submenu no-style">
+									<li>
+										<a data-is-expertnow-link="false" href="/en/solutions" target="_self" class=" mstr-submenu-item">Solutions
+										</a>
+									</li>
+									<li>
+										<a data-is-expertnow-sublink="false" href="/en/solutions/financial-services" target="_self" class="  mstr-submenu-item"> Financial Services
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/solutions/healthcare-pharmaceuticals" target="_self" class="  mstr-submenu-item"> Healthcare
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/solutions/retail" target="_self" class="  mstr-submenu-item"> Retail
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/solutions/federal-government" target="_self" class="  mstr-submenu-item"> Government
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/solutions/customer-stories" target="_self" class="  mstr-submenu-item"> Case Study Library
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/solutions/competitive-comparison" target="_self" class="  mstr-submenu-item"> Why MicroStrategy
+										</a>
+										
+										
+									</li>
+<li>
+										
+										
+										<div class="cmp-btn primary small submenuCTAButton">
+											<a data-is-expertnow-sublink="false" href="/en/solutions?now=start" target="_self">Request a pilot
+											</a>
+											
+										</div>
+									</li>
+
+							</ul>
+						</div>
+					</div>
+					
+				</li>
+<li class="site-navigation-sub-menu-toggle">
+					
+					<button class="mobile-nav-accordion"> 
+						<div style="display: flex; align-items: center;">
+							<img loading="lazy" src="/content/dam/dev-images/ui-icons/events-icon.svg" class="icon" style="padding-right: 10px;"/> Events
+						</div>
+					</button>
+					
+					<div class="panel">
+						<div class="site-navigation-sub-menu" style="padding: 0 0 32px 0;">
+							<ul class="mstr-nav-submenu no-style">
+									<li>
+										<a data-is-expertnow-link="false" href="/en/resources/events" target="_self" class=" mstr-submenu-item">Events
+										</a>
+									</li>
+									<li>
+										<a data-is-expertnow-sublink="false" href="/en/world-2023" target="_self" class="  mstr-submenu-item"> World 2023
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/resources/events/microworld-2022" target="_self" class="  mstr-submenu-item"> MicroWorld
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="/en/resources/events" target="_self" class="  mstr-submenu-item"> Webinars
+										</a>
+										
+										
+									</li>
+<li>
+										
+										
+										<div class="cmp-btn primary small submenuCTAButton">
+											<a data-is-expertnow-sublink="false" href="/en/resources/events#subscribe" target="_self">Stay informed
+											</a>
+											
+										</div>
+									</li>
+
+							</ul>
+						</div>
+					</div>
+					
+				</li>
+<li class="site-navigation-sub-menu-toggle">
+					
+					<button class="mobile-nav-accordion"> 
+						<div style="display: flex; align-items: center;">
+							<img loading="lazy" src="/content/dam/dev-images/ui-icons/support-community-icon.svg" class="icon" style="padding-right: 10px;"/> Community &amp; Support
+						</div>
+					</button>
+					
+					<div class="panel">
+						<div class="site-navigation-sub-menu" style="padding: 0 0 32px 0;">
+							<ul class="mstr-nav-submenu no-style">
+									<li>
+										<a data-is-expertnow-link="false" href="https://community.microstrategy.com/s/?language=en_US" target="_blank" class=" mstr-submenu-item">Community &amp; Support
+										</a>
+									</li>
+									<li>
+										<a data-is-expertnow-sublink="false" href="https://community.microstrategy.com/s/discussions?language=en_US" target="_blank" class="  mstr-submenu-item"> Search Discussions
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="https://community.microstrategy.com/s/support-create-case?language=en_US" target="_blank" class="  mstr-submenu-item"> Open A Case
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="https://support-cases.microstrategy.com/csm/?id=ms_csm_my_lists&table=sn_customerservice_case&view=sp&target_page_id=ms_standard_ticket&filter=active%3Dtrue%5Eu_term_key_renewal_case%3Dfalse%5EcontactDYNAMIC3a3138280f3e10103ff81b41ff767e9f&sel=my_cases" target="_blank" class="  mstr-submenu-item"> View My Cases
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="https://community.microstrategy.com/s/documentation?language=en_US" target="_blank" class="  mstr-submenu-item"> Documentation
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="https://community.microstrategy.com/s/products?language=en_US" target="_blank" class="  mstr-submenu-item"> Product Downloads
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="https://www.microstrategy.com/en/partners" target="_blank" class="  mstr-submenu-item"> Partner Ecosystem
+										</a>
+										
+										
+									</li>
+<li>
+										<a data-is-expertnow-sublink="false" href="https://blog.microstrategy.com/" target="_blank" class="  mstr-submenu-item"> Blog
+										</a>
+										
+										
+									</li>
+<li>
+										
+										
+										<div class="cmp-btn primary small submenuCTAButton">
+											<a data-is-expertnow-sublink="false" href="https://community.microstrategy.com/s/discussions?language=en_US" target="_blank">Ask a question
+											</a>
+											
+										</div>
+									</li>
+
+							</ul>
+						</div>
+					</div>
+					
+				</li>
+<li class="site-navigation-sub-menu-toggle">
+					
+					
+					<a data-is-expertnow-link="false" href="/en/careers" target="_self"> <img loading="lazy" src="/content/dam/dev-images/ui-icons/careers-icon.svg" class="icon"/> Careers
+					</a>
+					
+					
+				</li>
+<li class="site-navigation-sub-menu-toggle">
+					
+					
+					<a data-is-expertnow-link="false" href="/en/investor-relations" target="_self"> <img loading="lazy" src="/content/dam/dev-images/ui-icons/ir-icon.svg" class="icon"/> Investor Relations
+					</a>
+					
+					
+				</li>
+<li class="site-navigation-sub-menu-toggle">
+					
+					
+					<a data-is-expertnow-link="false" href="https://www.hope.com/" target="_blank"> <img loading="lazy" src="/content/dam/dev-images/ui-icons/bitcoin-icon.svg" class="icon"/> Bitcoin
+					</a>
+					
+					
+				</li>
+
+			</div>
+			<li id="site-language">
+				<input type="checkbox" class="toggle sr-only" id="toggleLanguage"/>
+				<label class="language-toggle" for="toggleLanguage">
+					<span class="icon icon-web_medium"></span>
+					Home
+					<span class="sr-only">View Languages</span>
+					<span class="icon icon-chevron-up_small"></span>
+				</label>
+				<ul class="languages no-style">
+					
+						
+							<li><a href="/en">Home</a></li>
+						
+					
+						
+							<li><a href="/fr"> Français</a></li>
+						
+					
+						
+							<li><a href="/de">Deutsch</a></li>
+						
+					
+						
+							<li><a href="/es">Español</a></li>
+						
+					
+						
+							<li><a href="/it">Italiano</a></li>
+						
+					
+						
+							<li><a href="/ja"> 日本語</a></li>
+						
+					
+						
+							<li><a href="/ko"> 한국어</a></li>
+						
+					
+						
+							<li><a href="/pt">Português</a></li>
+						
+					
+						
+							<li><a href="/zh">简体中文</a></li>
+						
+					
+						
+							<li><a href="/pl">Polski</a></li>
+						
+					
+						
+					
+						
+					
+						
+					
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+
+    
+
+
+    
+<script src="/etc.clientlibs/microstrategy/components/content/coveo/clientlib-coveo.48988d710d626b2cd65b90584169a6ca.js"></script>
+
+
+</div>
+
+    
+</div>
+
+</div></div>
+
+    
+</div>
+<div class="hero-interior media image aem-GridColumn aem-GridColumn--default--12"><header class="cmp-hero bg-img" style="background-image:url(/content/dam/website-assets/website-images/hero-banners/abstract-backgrounds/sky-with-stars-background.jpg)">
+	
+	<div class="cnt">
+		<div class="grid va-c">
+			<div class="cell xxs-12 m-6">
+				<h1>Data Visualization: What it is and why we use it</h1>
+				
+				
+
+
+    
+
+			</div>
+			
+			
+		</div>
+	</div>
+</header></div>
+<div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="section responsivegrid aem-GridColumn aem-GridColumn--default--12">
+<section class="cmp-section" id="importance">
+    <div class="cnt">
+        
+    <div class="grid">
+    	<div class="cell xxs-12">
+	        <h2>
+	        	Why Is It Important?
+	        </h2>
+   		</div>
+        <div class="cell xxs-12">
+            <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <p>According to the <a href="https://www.weforum.org/agenda/2017/09/the-value-of-data/">World Economic Forum</a>, the world produces 2.5 quintillion bytes of data every day, and 90% of all data has been created in the last two years. With so much data, it’s become increasingly difficult to manage and make sense of it all. It would be impossible for any single person to wade through data line-by-line and see distinct patterns and make observations. Data proliferation can be managed as part of the data science process, which includes data visualization.</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+        </div>
+    </div>
+    
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		
+    </div>
+</section>
+
+    
+</div>
+<div class="section responsivegrid no-pad aem-GridColumn aem-GridColumn--default--12">
+<section class="cmp-section">
+    <div class="cnt">
+        
+    <div class="grid">
+    	
+        <div class="cell xxs-12">
+            <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text-image img-right aem-GridColumn aem-GridColumn--default--12">
+<div><figure data-cmp-is="image" data-cmp-src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_1017591863/col1/text_image/media.coreimg.82{.width}.jpeg/1584028593391/data-viz-anscombes-quartet.jpeg" data-cmp-widths="128,256,512,1024,1280,1440,1920,2048" data-asset="/content/dam/website-assets/website-images/_section-specific/resources/introductory-guide/data-viz-anscombes-quartet.jpg" class="cmp-figure cmp-image " itemscope itemtype="http://schema.org/ImageObject">
+    
+       <noscript data-cmp-hook-image="noscript">
+            
+                <img loading="lazy" src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_1017591863/col1/text_image/media.coreimg.jpeg/1584028593391/data-viz-anscombes-quartet.jpeg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt/>
+            
+        </noscript>
+        
+        
+        
+    
+    
+    <script type="text/javascript">
+	    digitalData.event = digitalData.event || {};
+	    digitalData.event.videoFilePath = $("#videoid").attr('href');
+	    digitalData.event.videoName = $("#vidCaption").text();
+	    digitalData.event.timeStamp = new Date();
+	</script>
+</figure>
+
+
+
+    
+</div>
+<div>
+
+    <p><strong>Improved Insight</strong></p>
+<p>Data visualization can provide insight that traditional descriptive statistics cannot. A perfect example of this is <a href="https://en.wikipedia.org/wiki/Anscombe%27s_quartet">Anscombe’s Quartet</a>, created by Francis Anscombe in 1973. The illustration includes four different datasets with almost identical variance, mean, correlation between X and Y coordinates, and linear regression lines. However, the patterns are clearly different when plotted on a graph. Below, you can see a linear regression model would apply to graphs one and three, but a polynomial regression model would be ideal for graph two. This illustration highlights why it’s important to visualize data and not just rely on descriptive statistics.</p>
+
+
+
+    
+</div>
+</div>
+
+    
+</div>
+</div>
+        </div>
+    </div>
+    
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		
+    </div>
+</section>
+
+    
+</div>
+<div class="section responsivegrid no-pad aem-GridColumn aem-GridColumn--default--12">
+<section class="cmp-section">
+    <div class="cnt">
+        
+    <div class="grid">
+    	
+        <div class="cell xxs-12">
+            <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <p><strong>Faster Decision Making</strong></p>
+<p>Companies who can gather and quickly act on their data will be more competitive in the marketplace because they can make informed decisions sooner than the competition. Speed is key, and data visualization aides in the understanding of vast quantities of data by applying visual representations to the data. This visualization layer typically sits on top of a data warehouse or data lake and allows users to discover and explore data in a self-service manner. Not only does this spur creativity, but it reduces the need for IT to allocate resources to continually build new models.</p>
+<p>For example, say a marketing analyst who works across 20 different ad platforms and internal systems needs to quickly understand the effectiveness of marketing campaigns. A manual way to do this would be to go to each system, pull a report, combine the data, and then analyze in Excel. The analyst will then need to look at a swarm of metrics and attributes and will have difficulty drawing conclusions. However, modern business intelligence (BI) platforms will automatically connect the data sources and layer on data visualizations so the analyst can slice and dice the data with ease and quickly come to conclusions about marketing performance.</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+        </div>
+    </div>
+    
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		
+    </div>
+</section>
+
+    
+</div>
+<div class="section responsivegrid no-pad aem-GridColumn aem-GridColumn--default--12">
+<section class="cmp-section">
+    <div class="cnt">
+        
+    <div class="grid">
+    	
+        <div class="cell xxs-12">
+            <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <p><strong>Basic Example</strong></p>
+<p>Let’s say you’re a retailer and you want to compare sales of jackets to sales of socks over the course of the previous year. There’s more than one way to present the data, and tables are one of the most common. Here’s what this would look like:</p>
+
+
+
+    
+</div>
+<div class="media image aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--offset--default--1"><figure data-cmp-is="image" data-cmp-src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_59833644/col1/media.coreimg.82{.width}.png/1584028715528/data-viz-revenue-jackets-socks-grid.png" data-cmp-widths="128,256,512,1024,1280,1440,1920,2048" data-asset="/content/dam/website-assets/website-images/_section-specific/resources/introductory-guide/data-viz-revenue-jackets-socks-grid.png" class="cmp-figure cmp-image " itemscope itemtype="http://schema.org/ImageObject">
+    
+       <noscript data-cmp-hook-image="noscript">
+            
+                <img loading="lazy" src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_59833644/col1/media.coreimg.png/1584028715528/data-viz-revenue-jackets-socks-grid.png" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt/>
+            
+        </noscript>
+        
+        
+        
+    
+    
+    <script type="text/javascript">
+	    digitalData.event = digitalData.event || {};
+	    digitalData.event.videoFilePath = $("#videoid").attr('href');
+	    digitalData.event.videoName = $("#vidCaption").text();
+	    digitalData.event.timeStamp = new Date();
+	</script>
+</figure>
+
+
+
+    
+</div>
+<div class="cmp-text-image img-right aem-GridColumn aem-GridColumn--default--12">
+<div><figure data-cmp-is="image" data-cmp-src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_59833644/col1/text_image_2093373508/media.coreimg.82{.width}.png/1584030536997/data-viz-revenue-jackets-socks-line-graph.png" data-cmp-widths="128,256,512,1024,1280,1440,1920,2048" data-asset="/content/dam/website-assets/website-images/_section-specific/resources/introductory-guide/data-viz-revenue-jackets-socks-line-graph.png" class="cmp-figure cmp-image " itemscope itemtype="http://schema.org/ImageObject">
+    
+       <noscript data-cmp-hook-image="noscript">
+            
+                <img loading="lazy" src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_59833644/col1/text_image_2093373508/media.coreimg.png/1584030536997/data-viz-revenue-jackets-socks-line-graph.png" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt/>
+            
+        </noscript>
+        
+        
+        
+    
+    
+    <script type="text/javascript">
+	    digitalData.event = digitalData.event || {};
+	    digitalData.event.videoFilePath = $("#videoid").attr('href');
+	    digitalData.event.videoName = $("#vidCaption").text();
+	    digitalData.event.timeStamp = new Date();
+	</script>
+</figure>
+
+
+
+    
+</div>
+<div>
+
+    <p>The table above does an excellent job showing precise if this information is needed. However, it’s difficult to instantaneously see trends and the story the data tells.</p>
+<p>Now here’s the data in a line graph visualization:</p>
+
+
+
+    
+</div>
+</div>
+<div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <p>From the visualization, it becomes immediately obvious that sales of socks remain constant, with small spikes in December and June. On the other hand, sales of jackets are more seasonal, and reach their low point in July. They then rise and peak in December before decreasing monthly until right before fall. You could get this same story from looking at the chart, but it would take you much longer. Imagine trying to make sense of a table with thousands of data points.</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+        </div>
+    </div>
+    
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		
+    </div>
+</section>
+
+    
+</div>
+<div class="section responsivegrid pad-sm aem-GridColumn aem-GridColumn--default--12">
+<section class="cmp-section" id="science">
+    <div class="cnt">
+        
+    <div class="grid">
+    	<div class="cell xxs-12">
+	        <h2>
+	        	The Science Behind Data Visualization
+	        </h2>
+   		</div>
+        <div class="cell xxs-12">
+            <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <p><strong>Information Processing</strong></p>
+<p>To understand the science behind data visualization, we must first discuss how humans gather and process information. In collaboration with Amos Tversky, Daniel Kahn did <a href="https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow">extensive research</a> on how we form thoughts, and concluded that we use one of two methods:</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+        </div>
+    </div>
+    
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		
+    </div>
+</section>
+
+    
+</div>
+<div class="section responsivegrid no-pad aem-GridColumn aem-GridColumn--default--12">
+<section class="cmp-section">
+    <div class="cnt">
+        
+        
+        
+        
+        
+        
+<div class="grid">
+    <div class="cell xxs-12 m-6">
+        <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <p><strong>System I</strong></p>
+<p>Describes thought-processing that is fast, automatic, and unconscious. We use this method quite frequently in our everyday lives and can accomplish the following:</p>
+<ul>
+<li>Read text on a sign</li>
+<li>Determine where the source of a sound is</li>
+<li>Solve 1+1</li>
+<li>Recognize the difference between colors</li>
+<li>Ride a bike</li>
+</ul>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+    </div>
+    <div class="cell xxs-12 m-6">
+        <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <p><strong>System II</strong></p>
+<p>Describes a slow, logical, infrequent, and calculating thought and includes:</p>
+<ul>
+<li>Distinguish the difference in meaning behind multiple signs side-by-side</li>
+<li>Recite your phone number</li>
+<li>Understand complex social cues</li>
+<li>Solve 23x21</li>
+</ul>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+		
+    </div>
+</section>
+
+    
+</div>
+<div class="section responsivegrid no-pad aem-GridColumn aem-GridColumn--default--12">
+<section class="cmp-section">
+    <div class="cnt">
+        
+    <div class="grid">
+    	
+        <div class="cell xxs-12">
+            <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <p>With these two systems of thinking defined, Kahn explains why humans struggle to think in terms of statistics. He asserts that System I thinking is based on heuristics and biases to handle the volume of stimuli we encounter daily. An example of heuristics at work is a judge who sees a case only in terms of historical cases, despite nuances and differences unique to the new case. Further, he defined the following biases:</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+        </div>
+    </div>
+    
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		
+    </div>
+</section>
+
+    
+</div>
+<div class="section responsivegrid no-pad aem-GridColumn aem-GridColumn--default--12">
+<section class="cmp-section">
+    <div class="cnt">
+        
+        
+        
+        
+        
+        
+<div class="grid">
+    <div class="cell xxs-12 m-6">
+        <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <ul>
+<li><p><strong>Anchoring<br />
+</strong><span style="">A tendency to be swayed by irrelevant numbers. For example, this bias is manipulated by skill negotiators who offer a lower price (the anchor) than they expect to get and then come in slightly higher above the anchor.</span></p>
+</li>
+<li><p><strong>Availability<br />
+</strong><span style="">The frequency at which events occur in our mind are not accurate reflections of the actual probabilities. This is a mental shortcut – to assume that events that can be remembered are more likely to occur.</span></p>
+</li>
+<li><p><strong>Substitution<br />
+</strong><span style="">This refers to our tendency to substitute difficult questions with simpler ones. This bias is also famously called the </span><a href="https://en.wikipedia.org/wiki/Conjunction_fallacy" style="background-color: rgb(255,255,255);">conjunction fallacy</a><span style=""> or “Linda Problem.” This example askes the question:</span></p>
+</li>
+<p><em>Linda is 31 years old, single, outspoken, and very bright. She majored in philosophy. As a student, she was deeply concerned with issues of discrimination and social justice, and also participated in anti-nuclear demonstrations.</em></p>
+<p><em>Which is more probable?</em></p>
+<em><p>1) Linda is a bank teller</p>
+</em><p><em>2) Linda is a bank teller and is active in the feminist movement</em></p>
+<p>Most participants in the study chose option two, even though this violates the law of probability. In their minds, option two was more representative of Linda, so they used the substitution principle to answer the question.</p>
+</ul>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+    </div>
+    <div class="cell xxs-12 m-6">
+        <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <ul>
+<li><p><strong>Optimism and loss aversion</strong><br />
+Kahn believed that this may be the most significant bias we have. Optimism and loss aversion give us the illusion of control because we tend to deal only with the possibility of known outcomes that have been observed. We often don’t consider known unknowns or completely unforeseen outcomes. Our neglect of this complexity explains why we use a small sample size to make strong assumptions about future outcomes.</p>
+</li>
+<li><p><strong>Framing</strong><br />
+Framing refers to the context in which choices are presented. For example, more subjects were inclined to opt for a surgery if it was framed by a 90% survival rate as opposed to a 10% mortality rate.</p>
+</li>
+<li><p><strong>Sunk cost<br />
+</strong><span style="">This bias is often seen in the investing world when people continue to invest in an under-performing asset with poor prospects instead of getting out of the investment and into an asset with a more favorable outlook.</span></p>
+</li>
+</ul>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+		
+    </div>
+</section>
+
+    
+</div>
+<div class="section responsivegrid no-pad aem-GridColumn aem-GridColumn--default--12">
+<section class="cmp-section">
+    <div class="cnt">
+        
+    <div class="grid">
+    	
+        <div class="cell xxs-12">
+            <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text-image img-right aem-GridColumn aem-GridColumn--default--12">
+<div><figure data-cmp-is="image" data-cmp-src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_97638784/col1/text_image/media.coreimg.82{.width}.jpeg/1584030435641/data-visualization-senses-chart.jpeg" data-cmp-widths="128,256,512,1024,1280,1440,1920,2048" data-asset="/content/dam/website-assets/website-images/_section-specific/resources/introductory-guide/data-visualization-senses-chart.jpg" class="cmp-figure cmp-image " itemscope itemtype="http://schema.org/ImageObject">
+    
+       <noscript data-cmp-hook-image="noscript">
+            
+                <img loading="lazy" src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_97638784/col1/text_image/media.coreimg.jpeg/1584030435641/data-visualization-senses-chart.jpeg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt/>
+            
+        </noscript>
+        
+        
+        
+    
+    
+    <script type="text/javascript">
+	    digitalData.event = digitalData.event || {};
+	    digitalData.event.videoFilePath = $("#videoid").attr('href');
+	    digitalData.event.videoName = $("#vidCaption").text();
+	    digitalData.event.timeStamp = new Date();
+	</script>
+</figure>
+
+
+
+    
+</div>
+<div>
+
+    <p>With Systems I and II, along with biases and heuristics, in mind, we should seek to ensure that data is presented in a way that correctly communicates to our System I thought process. This allows our System II thought process to analyze data accurately. Our unconscious System I has the ability to process about <a href="https://www.forbes.com/sites/daviddisalvo/2013/06/22/your-brain-sees-even-when-you-dont/#4caa3ea8116a">11 million pieces of information/second </a>vs. our conscious, which can process only 40 pieces of information/second.</p>
+<p>We must also look at how each system utilizes our senses to take in information. According to Tor Norretanders' &quot;The User Illusion&quot;, the visual sense processes the most information in both systems:</p>
+
+
+
+    
+</div>
+</div>
+<div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <p>Since our sub-conscious system processes more information through vision, data visualization is a perfect solution to communicate patterns and insights from data sets. When someone sees a visualization of data, it will take less than <a href="https://www.interaction-design.org/literature/article/preattentive-visual-properties-and-how-to-use-them-in-information-visualization">500 milliseconds</a> for the eye and the brain to process what are called pre-attentive visual properties of an image. According to Colin Ware’s <em>Information Visualization: Perception for Design</em>, he defines four pre-attentive visual properties:</p>
+<ol>
+<li>Color</li>
+<li>Form</li>
+<li>Movement</li>
+<li>Spatial positioning</li>
+</ol>
+<p>These four components make up the composition of each data visualization and should be carefully considered for presentation.</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+        </div>
+    </div>
+    
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		
+    </div>
+</section>
+
+    
+</div>
+<div class="section responsivegrid pad-sm aem-GridColumn aem-GridColumn--default--12">
+<section class="cmp-section" id="history">
+    <div class="cnt">
+        
+    <div class="grid">
+    	<div class="cell xxs-12">
+	        <h2>
+	        	A brief history of data visualization.
+	        </h2>
+   		</div>
+        <div class="cell xxs-12">
+            <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="carousel aem-GridColumn aem-GridColumn--default--12">
+
+
+    <div class="cmp-carousel owl-carousel nav-below-left" data-options='{&quot;loop&quot;: true, &quot;margin&quot;: 1, &quot;nav&quot;: true, &quot;dots&quot;: false, &quot;items&quot;: 1, &quot;responsive&quot;: {&quot;0&quot;: {&quot;dots&quot;: true, &quot;mouseDrag&quot;: true}, &quot;992&quot;: {&quot;dots&quot;: false, &quot;mouseDrag&quot;: false}}}'>
+        
+		         <div class="item">
+			         <div class="card-layered media image">
+<div class="cmp-card layered">
+    <div class="copy">
+        <h4>30,000-10,000 B.C.</h4>
+        There is no comprehensive history of data visualization, but we know it is not a modern development. The Lascaux Star map in France is believed to be 10,000 to 30,000 years old.	
+        <div class="cmp-btn text">
+            <a href="https://en.wikipedia.org/wiki/Star_chart">
+                Learn more about the Lascaux Star Map
+            </a>
+        </div>
+    </div>
+
+    <div class="media image lightbox aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+        <figure class="cmp-figure ">
+            <figure data-cmp-is="image" data-cmp-src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_1521857889/col1/carousel/item_1584034009074.coreimg{.width}.jpeg/1584034308379/data-viz-30kbc-starmap.jpeg" data-asset="/content/dam/website-assets/website-images/_section-specific/resources/introductory-guide/data-viz-30kBC-starmap.jpg" data-asset-id="26d9a718-b894-47fb-83ef-342cae0f7eb6" data-title="Lascaux Star map in France. Believed to be 10,000 to 30,000 years old." class="cmp-figure cmp-image " itemscope itemtype="http://schema.org/ImageObject">
+    
+       
+            
+                <img loading="lazy" src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_1521857889/col1/carousel/item_1584034009074.coreimg.jpeg/1584034308379/data-viz-30kbc-starmap.jpeg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt title="Lascaux Star map in France. Believed to be 10,000 to 30,000 years old."/>
+            
+        
+        
+        
+        
+    
+    <meta itemprop="caption" content="Lascaux Star map in France. Believed to be 10,000 to 30,000 years old."/>
+    <script type="text/javascript">
+	    digitalData.event = digitalData.event || {};
+	    digitalData.event.videoFilePath = $("#videoid").attr('href');
+	    digitalData.event.videoName = $("#vidCaption").text();
+	    digitalData.event.timeStamp = new Date();
+	</script>
+</figure>
+<p class="h5 cmp-media-titleText" id="vidCaption">Lascaux Star map in France. Believed to be 10,000 to 30,000 years old.</p>
+
+
+    
+
+        </figure>
+    </div>
+</div>
+</div>
+
+		         </div>
+        
+		         <div class="item">
+			         <div class="card-layered media image">
+<div class="cmp-card layered">
+    <div class="copy">
+        <h4>2600 B.C</h4>
+        Quipu was used by the Incans to collect data and keep records.	
+        <div class="cmp-btn text">
+            <a href="https://en.wikipedia.org/wiki/Quipu">
+                Learn more about Quipu
+            </a>
+        </div>
+    </div>
+
+    <div class="media image lightbox aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+        <figure class="cmp-figure ">
+            <figure data-cmp-is="image" data-cmp-src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_1521857889/col1/carousel/item_1584034324226.coreimg{.width}.jpeg/1584034670838/data-viz-2600bc-quipu.jpeg" data-asset="/content/dam/website-assets/website-images/_section-specific/resources/introductory-guide/data-viz-2600BC-quipu.jpg" data-asset-id="2542dcdb-5d2b-4689-9dbf-7368bd744e18" data-title="Quipu, or talking knots." class="cmp-figure cmp-image " itemscope itemtype="http://schema.org/ImageObject">
+    
+       
+            
+                <img loading="lazy" src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_1521857889/col1/carousel/item_1584034324226.coreimg.jpeg/1584034670838/data-viz-2600bc-quipu.jpeg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt title="Quipu, or talking knots."/>
+            
+        
+        
+        
+        
+    
+    <meta itemprop="caption" content="Quipu, or talking knots."/>
+    <script type="text/javascript">
+	    digitalData.event = digitalData.event || {};
+	    digitalData.event.videoFilePath = $("#videoid").attr('href');
+	    digitalData.event.videoName = $("#vidCaption").text();
+	    digitalData.event.timeStamp = new Date();
+	</script>
+</figure>
+<p class="h5 cmp-media-titleText" id="vidCaption">Quipu, or talking knots.</p>
+
+
+    
+
+        </figure>
+    </div>
+</div>
+</div>
+
+		         </div>
+        
+		         <div class="item">
+			         <div class="card-layered media image">
+<div class="cmp-card layered">
+    <div class="copy">
+        <h4>1160 B.C.</h4>
+        The first documented data visualization is called the Turin Papyrus Map. This Egyptian map shows the distance between quarries and depicts the size of the stone blocks quarried. It also utilizes colors that contain information about the type of stone in each quarry.	
+        <div class="cmp-btn text">
+            <a href="https://en.wikipedia.org/wiki/Turin_Papyrus_Map">
+                Learn more about the Turin Papyrus Map
+            </a>
+        </div>
+    </div>
+
+    <div class="media image lightbox aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+        <figure class="cmp-figure ">
+            <figure data-cmp-is="image" data-cmp-src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_1521857889/col1/carousel/item_1584034339680.coreimg{.width}.jpeg/1584034746437/data-viz-1160bc-turin.jpeg" data-asset="/content/dam/website-assets/website-images/_section-specific/resources/introductory-guide/data-viz-1160BC-turin.jpg" data-asset-id="84122c21-0ca7-46c3-a840-42d069bc6093" data-title="Turin papyrus map" class="cmp-figure cmp-image " itemscope itemtype="http://schema.org/ImageObject">
+    
+       
+            
+                <img loading="lazy" src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_1521857889/col1/carousel/item_1584034339680.coreimg.jpeg/1584034746437/data-viz-1160bc-turin.jpeg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt title="Turin papyrus map"/>
+            
+        
+        
+        
+        
+    
+    <meta itemprop="caption" content="Turin papyrus map"/>
+    <script type="text/javascript">
+	    digitalData.event = digitalData.event || {};
+	    digitalData.event.videoFilePath = $("#videoid").attr('href');
+	    digitalData.event.videoName = $("#vidCaption").text();
+	    digitalData.event.timeStamp = new Date();
+	</script>
+</figure>
+<p class="h5 cmp-media-titleText" id="vidCaption">Turin papyrus map</p>
+
+
+    
+
+        </figure>
+    </div>
+</div>
+</div>
+
+		         </div>
+        
+		         <div class="item">
+			         <div class="card-layered media image">
+<div class="cmp-card layered">
+    <div class="copy">
+        <h4>10th to 11th Century</h4>
+        Plots of planetary movements are used in monastery textbooks. This visualization demonstrates the impact the invention of paper and parchment had on our ability to communicate data.	
+        <div class="cmp-btn text">
+            <a>
+                
+            </a>
+        </div>
+    </div>
+
+    <div class="media image lightbox aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+        <figure class="cmp-figure ">
+            <figure data-cmp-is="image" data-cmp-src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_1521857889/col1/carousel/item_1584034356319.coreimg{.width}.jpeg/1584034816824/data-viz-10kad-planetary.jpeg" data-asset="/content/dam/website-assets/website-images/_section-specific/resources/introductory-guide/data-viz-10kAD-planetary.jpg" data-asset-id="90ccaa30-8bae-41b6-a805-a5a9b8e3e21b" data-title="Planetary movement visualization on parchment." class="cmp-figure cmp-image " itemscope itemtype="http://schema.org/ImageObject">
+    
+       
+            
+                <img loading="lazy" src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_1521857889/col1/carousel/item_1584034356319.coreimg.jpeg/1584034816824/data-viz-10kad-planetary.jpeg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt title="Planetary movement visualization on parchment."/>
+            
+        
+        
+        
+        
+    
+    <meta itemprop="caption" content="Planetary movement visualization on parchment."/>
+    <script type="text/javascript">
+	    digitalData.event = digitalData.event || {};
+	    digitalData.event.videoFilePath = $("#videoid").attr('href');
+	    digitalData.event.videoName = $("#vidCaption").text();
+	    digitalData.event.timeStamp = new Date();
+	</script>
+</figure>
+<p class="h5 cmp-media-titleText" id="vidCaption">Planetary movement visualization on parchment.</p>
+
+
+    
+
+        </figure>
+    </div>
+</div>
+</div>
+
+		         </div>
+        
+		         <div class="item">
+			         <div class="card-layered media image">
+<div class="cmp-card layered">
+    <div class="copy">
+        <h4>1679</h4>
+        Rene Descartes pioneers analytic geometry and the two-dimensional coordinate system, which uses geometry to describe algebra.	
+        <div class="cmp-btn text">
+            <a>
+                
+            </a>
+        </div>
+    </div>
+
+    <div class="media image lightbox aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+        <figure class="cmp-figure ">
+            <figure data-cmp-is="image" data-cmp-src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_1521857889/col1/carousel/item_1584034516359.coreimg{.width}.jpeg/1584034878469/data-viz-1679-cartesian.jpeg" data-asset="/content/dam/website-assets/website-images/_section-specific/resources/introductory-guide/data-viz-1679-cartesian.jpg" data-asset-id="3a05738a-c362-4656-917e-2091ca91d2ec" data-title="Cartesian coordinate system" class="cmp-figure cmp-image " itemscope itemtype="http://schema.org/ImageObject">
+    
+       
+            
+                <img loading="lazy" src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_1521857889/col1/carousel/item_1584034516359.coreimg.jpeg/1584034878469/data-viz-1679-cartesian.jpeg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt title="Cartesian coordinate system"/>
+            
+        
+        
+        
+        
+    
+    <meta itemprop="caption" content="Cartesian coordinate system"/>
+    <script type="text/javascript">
+	    digitalData.event = digitalData.event || {};
+	    digitalData.event.videoFilePath = $("#videoid").attr('href');
+	    digitalData.event.videoName = $("#vidCaption").text();
+	    digitalData.event.timeStamp = new Date();
+	</script>
+</figure>
+<p class="h5 cmp-media-titleText" id="vidCaption">Cartesian coordinate system</p>
+
+
+    
+
+        </figure>
+    </div>
+</div>
+</div>
+
+		         </div>
+        
+		         <div class="item">
+			         <div class="card-layered media image">
+<div class="cmp-card layered">
+    <div class="copy">
+        <h4>1781</h4>
+        William Playfair creates the first bar chart, representing Scotland’s imports and exports from 17 countries. He strongly believed charts communicated better than tables of data, and is also credited with inventing the line, area, and pie charts.	
+        <div class="cmp-btn text">
+            <a>
+                
+            </a>
+        </div>
+    </div>
+
+    <div class="media image lightbox aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+        <figure class="cmp-figure ">
+            <figure data-cmp-is="image" data-cmp-src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_1521857889/col1/carousel/item_1584034527244.coreimg{.width}.jpeg/1584034921907/data-viz-1781-william-playfair.jpeg" data-asset="/content/dam/website-assets/website-images/_section-specific/resources/introductory-guide/data-viz-1781-william-playfair.jpg" data-asset-id="64125439-7a0b-447e-bda0-e94bcc605e2f" data-title="William Playfair&#39;s visualization" class="cmp-figure cmp-image " itemscope itemtype="http://schema.org/ImageObject">
+    
+       
+            
+                <img loading="lazy" src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_1521857889/col1/carousel/item_1584034527244.coreimg.jpeg/1584034921907/data-viz-1781-william-playfair.jpeg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt title="William Playfair&#39;s visualization"/>
+            
+        
+        
+        
+        
+    
+    <meta itemprop="caption" content="William Playfair&#39;s visualization"/>
+    <script type="text/javascript">
+	    digitalData.event = digitalData.event || {};
+	    digitalData.event.videoFilePath = $("#videoid").attr('href');
+	    digitalData.event.videoName = $("#vidCaption").text();
+	    digitalData.event.timeStamp = new Date();
+	</script>
+</figure>
+<p class="h5 cmp-media-titleText" id="vidCaption">William Playfair&#39;s visualization</p>
+
+
+    
+
+        </figure>
+    </div>
+</div>
+</div>
+
+		         </div>
+        
+		         <div class="item">
+			         <div class="card-layered media image">
+<div class="cmp-card layered">
+    <div class="copy">
+        <h4>1967 - 1977</h4>
+        Jacque Bertin’s work in The Seismology of Graphics was foundational to modern day improvements in how we visualize data. He found that visual perception operated according to rules which could be followed to express data clearly and efficiently. Mathematician John Tukey introduces the box plot in his book Exploratory Data Analysis.	
+        <div class="cmp-btn text">
+            <a>
+                
+            </a>
+        </div>
+    </div>
+
+    <div class="media image lightbox aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+        <figure class="cmp-figure ">
+            <figure data-cmp-is="image" data-cmp-src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_1521857889/col1/carousel/item_1584034538220.coreimg{.width}.jpeg/1584034994473/data-viz-1968-john-tukey.jpeg" data-asset="/content/dam/website-assets/website-images/_section-specific/resources/introductory-guide/data-viz-1968-john-tukey.jpg" data-asset-id="3b9ed04e-b1f9-42c6-b9a1-0767ddb65a0e" data-title="John Tukey" class="cmp-figure cmp-image " itemscope itemtype="http://schema.org/ImageObject">
+    
+       
+            
+                <img loading="lazy" src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_1521857889/col1/carousel/item_1584034538220.coreimg.jpeg/1584034994473/data-viz-1968-john-tukey.jpeg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt title="John Tukey"/>
+            
+        
+        
+        
+        
+    
+    <meta itemprop="caption" content="John Tukey"/>
+    <script type="text/javascript">
+	    digitalData.event = digitalData.event || {};
+	    digitalData.event.videoFilePath = $("#videoid").attr('href');
+	    digitalData.event.videoName = $("#vidCaption").text();
+	    digitalData.event.timeStamp = new Date();
+	</script>
+</figure>
+<p class="h5 cmp-media-titleText" id="vidCaption">John Tukey</p>
+
+
+    
+
+        </figure>
+    </div>
+</div>
+</div>
+
+		         </div>
+        
+		         <div class="item">
+			         <div class="card-layered media image">
+<div class="cmp-card layered">
+    <div class="copy">
+        <h4>1983</h4>
+        Edward Tufte, an American expert in informational graphics, publishes his cornerstone book &lt;em&gt;The Visual Display of Quantitative Information&lt;/em&gt;. His work focused on accurately and efficiently depicting data. He introduced the data-ink ratio, which encourages presenters to present graphics as simply as possible. Best practices such as removing background colors and redundant data labels sprung from his work.	
+        <div class="cmp-btn text">
+            <a>
+                
+            </a>
+        </div>
+    </div>
+
+    <div class="media image lightbox aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+        <figure class="cmp-figure ">
+            <figure data-cmp-is="image" data-cmp-src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_1521857889/col1/carousel/item_1584034554402.coreimg{.width}.jpeg/1584035036167/data-viz-1983-tufte.jpeg" data-asset="/content/dam/website-assets/website-images/_section-specific/resources/introductory-guide/data-viz-1983-tufte.jpg" data-asset-id="c053c70b-1417-4c05-b88f-402f7a3d008d" data-title="Edward Tufte" class="cmp-figure cmp-image " itemscope itemtype="http://schema.org/ImageObject">
+    
+       
+            
+                <img loading="lazy" src="/en/resources/introductory-guides/data-visualization-what-it-is-and-why-we-use-it/_jcr_content/root/responsivegrid/section_1521857889/col1/carousel/item_1584034554402.coreimg.jpeg/1584035036167/data-viz-1983-tufte.jpeg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt title="Edward Tufte"/>
+            
+        
+        
+        
+        
+    
+    <meta itemprop="caption" content="Edward Tufte"/>
+    <script type="text/javascript">
+	    digitalData.event = digitalData.event || {};
+	    digitalData.event.videoFilePath = $("#videoid").attr('href');
+	    digitalData.event.videoName = $("#vidCaption").text();
+	    digitalData.event.timeStamp = new Date();
+	</script>
+</figure>
+<p class="h5 cmp-media-titleText" id="vidCaption">Edward Tufte</p>
+
+
+    
+
+        </figure>
+    </div>
+</div>
+</div>
+
+		         </div>
+        
+    </div>
+</div>
+
+    
+</div>
+</div>
+        </div>
+    </div>
+    
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		
+    </div>
+</section>
+
+    
+</div>
+<div class="section responsivegrid aem-GridColumn aem-GridColumn--default--12">
+<section class="cmp-section" id="types">
+    <div class="cnt">
+        
+        
+        
+        
+        
+        <div class="grid va-center ha-center">
+    <div class="cell">
+        <h2>
+        	Common Types of Data Visualizations
+        </h2>
+    </div>
+</div>
+<div class="grid">
+    <div class="cell xxs-12 m-6">
+        <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+    </div>
+    <div class="cell xxs-12 m-6">
+        <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+		
+    </div>
+</section>
+
+    
+</div>
+<div class="section responsivegrid no-pad aem-GridColumn aem-GridColumn--default--12">
+<section class="cmp-section">
+    <div class="cnt">
+        
+        
+        
+        
+        
+        <div class="grid va-center ha-center">
+    <div class="cell">
+        <h2>
+        	Time Series
+        </h2>
+    </div>
+</div>
+<div class="grid">
+    <div class="cell xxs-12 m-6">
+        <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <ul>
+<li>Line charts</li>
+<p>These are one of the most basic and commonly used visualizations. They show a change in one or more variables over time.</p>
+<img src="https://www.microstrategy.com/getmedia/0560c256-ddf7-463a-b4d2-6f97896b7865/line-graph-example" alt="line graph example"/><p>When to use: You need to show how a variable changes over time.</p>
+</ul>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+    </div>
+    <div class="cell xxs-12 m-6">
+        <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <ul>
+<li>Area charts</li>
+<p>A variation of line charts, area charts display multiple values in a time series.</p>
+<img src="https://www.microstrategy.com/getmedia/dacc712d-b78c-49eb-ae42-096dccd9be59/area-chart-example" alt="area chart example"/><p>When to use: You need to show cumulative changes in multiple variables over time.</p>
+</ul>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+		
+    </div>
+</section>
+
+    
+</div>
+<div class="section responsivegrid no-pad aem-GridColumn aem-GridColumn--default--12">
+<section class="cmp-section">
+    <div class="cnt">
+        
+        
+        
+        
+        
+        <div class="grid va-center ha-center">
+    <div class="cell">
+        <h2>
+        	Ranking
+        </h2>
+    </div>
+</div>
+<div class="grid">
+    <div class="cell xxs-12 m-6">
+        <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <ul>
+<li>Bar charts</li>
+<p>These charts are like line charts, but they use bars to represent each data point.</p>
+<img src="https://www.microstrategy.com/getmedia/182f468b-f889-473e-a9fb-680b88a7300f/bar-chart-example" alt="bar chart example"/><p>When to use: Bar charts are best used when you need to compare multiple variables in a single timeframe or a single variable in a time series.</p>
+</ul>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+    </div>
+    <div class="cell xxs-12 m-6">
+        <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <ul>
+<li>Population pyramids</li>
+<p>Population pyramids are stacked bar graphs that depict the complex social narrative of a population.</p>
+<img src="https://www.microstrategy.com/getmedia/90a7cce2-6fe2-4be2-8427-0b6bcc6f146c/population-pyramid" alt="population pyramid example"/><p>When to use: You need to show the distribution of a population.</p>
+</ul>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+		
+    </div>
+</section>
+
+    
+</div>
+<div class="section responsivegrid no-pad aem-GridColumn aem-GridColumn--default--12">
+<section class="cmp-section">
+    <div class="cnt">
+        
+        
+        
+        
+        
+        <div class="grid va-center ha-center">
+    <div class="cell">
+        <h2>
+        	Part to Whole
+        </h2>
+    </div>
+</div>
+<div class="grid">
+    <div class="cell xxs-12 m-6">
+        <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <ul>
+<li>Pie charts</li>
+<p>These show the parts of a whole in the form of a pie.</p>
+<img src="https://www.microstrategy.com/getmedia/ac91afea-6fe2-4d95-b879-5483f122a211/pie-charts" alt="pie chart example"/><p>When to use: You want to see parts of a whole on a percentage basis. However, many experts recommend using other formats instead because it’s more difficult for the human eye to make sense of the data in this format because due to increased processing time. Many argue that a bar chart or line graph make more sense.</p>
+</ul>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+    </div>
+    <div class="cell xxs-12 m-6">
+        <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <ul>
+<li>Tree maps</li>
+<p>Tree maps are a way to display hierarchal data in a nested format. The size of the rectangles are proportional to each category’s percentage of the whole.</p>
+<img src="https://www.microstrategy.com/getmedia/3783e666-409b-4c1a-ae26-d195f4fa097d/tree-map" alt="tree map example"/><p>When to use: These are most useful when you want to compare parts of a whole and have many categories.</p>
+</ul>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+		
+    </div>
+</section>
+
+    
+</div>
+<div class="section responsivegrid no-pad aem-GridColumn aem-GridColumn--default--12">
+<section class="cmp-section">
+    <div class="cnt">
+        
+        
+        
+        
+        
+        
+<div class="grid">
+    <div class="cell xxs-12 m-6">
+        <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <h3>Deviation</h3>
+<h6>Bar chart (actual vs. expected)</h6>
+<p>These compare an expected value vs. the actual value for a given variable.</p>
+<p>When to use: You need to compare expected and actual values for a single variable. The above example shows the number of items sold per category vs. the expected number. You can easily see sweaters underperformed expectations above all other categories, but dresses and shorts overperformed.</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+    </div>
+    <div class="cell xxs-12 m-6">
+        <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <h3>Correlation</h3>
+<h6>Scatter plots</h6>
+<p>Scatter plots show the correlation between two variables in the form of an X and Y axis and dots that represent data points.</p>
+<p>When to use: You want to see the correlation between two variables.</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+		
+    </div>
+</section>
+
+    
+</div>
+<div class="section responsivegrid no-pad aem-GridColumn aem-GridColumn--default--12">
+<section class="cmp-section">
+    <div class="cnt">
+        
+        
+        
+        
+        
+        <div class="grid va-center ha-center">
+    <div class="cell">
+        <h2>
+        	Frequency Distribution
+        </h2>
+    </div>
+</div>
+<div class="grid">
+    <div class="cell xxs-12 m-6">
+        <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <h6>Histograms</h6>
+<p>Histograms plot the number of times an event occurs within a given data set and presents in a bar graph format.</p>
+<p>When to use: You want to find the frequency distribution of a given dataset. For example, you wish to see the relative likelihood of selling 300 items in a day given historical performance.</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+    </div>
+    <div class="cell xxs-12 m-6">
+        <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <h6>Box plots</h6>
+<p>These are non-parametric visualizations that display a measure of dispersion. The box represents the second and third quartile (50%) of data points and the line within the box represents the median. The two lines extending outside the box are called whiskers and represent the first and fourth quartile, along with the minimum and maximum value.</p>
+<p>When to use: You want to see the distribution of one or more datasets. These are used instead of histograms when space needs to be minimized.</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+		
+    </div>
+</section>
+
+    
+</div>
+<div class="section responsivegrid no-pad aem-GridColumn aem-GridColumn--default--12">
+<section class="cmp-section">
+    <div class="cnt">
+        
+        
+        
+        
+        
+        <div class="grid va-center ha-center">
+    <div class="cell">
+        <h2>
+        	Nominal Comparison
+        </h2>
+    </div>
+</div>
+<div class="grid">
+    <div class="cell xxs-12 m-6">
+        <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <h6>Bubble charts</h6>
+<p>Bubble charts are like scatter plots but add more functionality because the size and/or color of each bubble represents additional data.</p>
+<p>When to use: When you have three variables to compare.</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+    </div>
+    <div class="cell xxs-12 m-6">
+        <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <h6>Heat maps</h6>
+<p>A heat map is a graphical representation of data in which each individual value is contained within a matrix. The shades represent a quantity as defined by the legend.</p>
+<p>When to use: These are useful when you want to analyze a variable across a matrix of data, such as a timeframe of days and hours. The different shades allow you to quickly discern the extremes. The above example shows users of a website by hour and time of day during a week.</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+		
+    </div>
+</section>
+
+    
+</div>
+<div class="section responsivegrid no-pad aem-GridColumn aem-GridColumn--default--12">
+<section class="cmp-section">
+    <div class="cnt">
+        
+        
+        
+        
+        
+        
+<div class="grid">
+    <div class="cell xxs-12 m-6">
+        <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <h3>Geographical Comparison</h3>
+<h6>Chloropleth</h6>
+<p>Choropleth visualizations are a variation of heat maps where the shading is applied to a geographic map.</p>
+<p>When to use: You need to compare a dataset by geographic region.</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+    </div>
+    <div class="cell xxs-12 m-6">
+        <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <h3>Flow</h3>
+<h6>Sankey diagram</h6>
+<p>The Sankey diagram is a type of flow diagram in which the width of the arrows is displayed proportionally to the quantity of the flow.</p>
+<p>When to use: You need to visualize the flow of a quantity. The example above is a famous example of Napoleon’s army as it invaded Russia during a cold winter. The army begins as a large mass but dwindles as it moves towards Moscow and retreats.</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+		
+    </div>
+</section>
+
+    
+</div>
+<div class="section responsivegrid no-pad aem-GridColumn aem-GridColumn--default--12">
+<section class="cmp-section">
+    <div class="cnt">
+        
+        
+        
+        
+        
+        
+<div class="grid">
+    <div class="cell xxs-12 m-6">
+        <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <h3>Relationships</h3>
+<h6>Network diagram</h6>
+<p>These display complex relationships between entities. It shows how each entity is connected to the others to form a network.</p>
+<p>When to use: You need to compare the relationships within a network. These are especially useful for large networks. The above shows the network of flight paths for Southwest airlines.</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+    </div>
+    <div class="cell xxs-12 m-6">
+        <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+    </div>
+</div>
+
+        
+        
+        
+        
+        
+        
+		
+    </div>
+</section>
+
+    
+</div>
+<div class="section responsivegrid aem-GridColumn aem-GridColumn--default--12">
+<section class="cmp-section" id="usecase">
+    <div class="cnt">
+        
+    <div class="grid">
+    	<div class="cell xxs-12">
+	        <h2>
+	        	Use Cases
+	        </h2>
+   		</div>
+        <div class="cell xxs-12">
+            <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <p>Data visualization is used in many disciplines and impacts how we see the world daily. It’s increasingly important to be able to react and make decisions quickly in both business and public services. We compiled a few examples of how data visualization is commonly used below.</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+        </div>
+    </div>
+    
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		
+    </div>
+</section>
+
+    
+</div>
+<div class="section responsivegrid aem-GridColumn aem-GridColumn--default--12">
+<section style="scroll-margin:13.5rem 0 0 0;background-color: transparent;background-image:url()">
+    
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="grid aem-GridColumn aem-GridColumn--default--12">
+
+	
+		<div class="cell xxs-12  m-4  ">
+			
+				
+				<div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <h3>D3.js</h3>
+<p>D3.js stands for Data-Driven-Documents and is a JavaScript library for dynamic and interactive data visualizations in web browsers. It was created in 2011 and is used on many websites. It does an excellent job of providing web developers with a toolset for utilizing APIs and SVG graphics to create visualizations across the web.</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+	
+		<div class="cell xxs-12  m-4  ">
+			
+			
+				
+				<div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <h3>Excel</h3>
+<p>One of the most widely used tools, Microsoft Excel comes with most office computers and is a standard method of visualizing data. It’s very easy for users to create quick visualizations, but is not often considered for data aggregation, governance, and advanced reporting.</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+	
+		<div class="cell xxs-12  m-4  ">
+			
+			
+			
+				
+				<div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <h3>MicroStrategy</h3>
+<p>MicroStrategy is a leader in enterprise analytics solutions and offers governed, personalized data to each member of an organization. It can handle big data a in fast and automated fashion and offers the ability to create customized data visualizations out-of-the-box.</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+	
+</div>
+
+    
+</div>
+
+</section>
+
+    
+
+</div>
+<div class="section responsivegrid aem-GridColumn aem-GridColumn--default--12">
+<section class="cmp-section" id="faq">
+    <div class="cnt">
+        
+    <div class="grid">
+    	<div class="cell xxs-12">
+	        <h2>
+	        	Frequently Asked Questions
+	        </h2>
+   		</div>
+        <div class="cell xxs-12">
+            <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-accordion aem-GridColumn aem-GridColumn--default--12">
+<dl class="accordion" role="presentation">
+    
+        <dt class="heading" role="heading" aria-level="3"><button id="Sect0Toggle" aria-expanded="false" aria-controls="Sect0" type="button">Why do we use data visualization?</button></dt>
+        <dd class="panel" id="Sect0" aria-labelledby="Sect0Toggle" hidden="hidden">
+            <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <p>To quickly make sense of data which would otherwise be difficult to draw conclusions from.</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+        </dd>
+    
+        <dt class="heading" role="heading" aria-level="3"><button id="Sect1Toggle" aria-expanded="false" aria-controls="Sect1" type="button">What are the benefits of data visualization?</button></dt>
+        <dd class="panel" id="Sect1" aria-labelledby="Sect1Toggle" hidden="hidden">
+            <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <p>Faster and improved insights from large data sets.</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+        </dd>
+    
+        <dt class="heading" role="heading" aria-level="3"><button id="Sect2Toggle" aria-expanded="false" aria-controls="Sect2" type="button">What is data analysis and visualization?</button></dt>
+        <dd class="panel" id="Sect2" aria-labelledby="Sect2Toggle" hidden="hidden">
+            <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <p>Data analysis is the process of analyzing data, and visualization takes this a step further by applying information graphics to convey patterns and trends.</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+        </dd>
+    
+        <dt class="heading" role="heading" aria-level="3"><button id="Sect3Toggle" aria-expanded="false" aria-controls="Sect3" type="button">What is the purpose of using a dashboard for data visualization?</button></dt>
+        <dd class="panel" id="Sect3" aria-labelledby="Sect3Toggle" hidden="hidden">
+            <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <p>A dashboard allows for multiple visualizations to be seen within a single view. It’s often used to show only the most important data and is sometimes personalized.</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+        </dd>
+    
+        <dt class="heading" role="heading" aria-level="3"><button id="Sect4Toggle" aria-expanded="false" aria-controls="Sect4" type="button">Why is visualizing data so important?</button></dt>
+        <dd class="panel" id="Sect4" aria-labelledby="Sect4Toggle" hidden="hidden">
+            <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <p>It allows for faster processing of data sets for the purpose of drawing conclusions.</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+        </dd>
+    
+        <dt class="heading" role="heading" aria-level="3"><button id="Sect5Toggle" aria-expanded="false" aria-controls="Sect5" type="button">What is data presentation?</button></dt>
+        <dd class="panel" id="Sect5" aria-labelledby="Sect5Toggle" hidden="hidden">
+            <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-text aem-GridColumn aem-GridColumn--default--12">
+
+    <p>Data presentation is the act of presenting data with the goal of communicating patterns from data.</p>
+
+
+
+    
+</div>
+
+    
+</div>
+</div>
+        </dd>
+    
+</dl></div>
+
+    
+</div>
+</div>
+        </div>
+    </div>
+    
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		
+    </div>
+</section>
+
+    
+</div>
+
+    
+</div>
+</div>
+<div class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-experiencefragment">
+
+    
+
+
+
+<div class="xf-content-height">
+    
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="footer parbase aem-GridColumn aem-GridColumn--default--12">
+
+<footer class="page-footer ">
+	<div class="grid pb-0">
+		<div class="legalCell cell xxs-12 s-6 xl-4">
+			<div class="grid condensed-padding pt-0 grid-y ha-r xl-ha-sb">
+				<div class="cell xxs-12 xl-fill">
+					<a class="site-logo" href="/en">
+						<img loading="lazy" src="/content/dam/dev-images/ui-icons/microstrategy-logo_red.svg" alt="MicroStrategy logo" class="logo"/>
+					</a>
+				</div>
+				<div class="cell xs-py-0">
+					<nav class="cmp-nav-social">
+						<ul class="grid no-padding no-style">
+							
+								<li class="cell"><a href="https://twitter.com/microstrategy" target="_blank" class="icon icon-twitter"><span class="sr-only">Visit us on Twitter</span></a></li>
+							
+								<li class="cell"><a href="https://linkedin.com/company/microstrategy" target="_blank" class="icon icon-linkedin"><span class="sr-only">Visit us on LinkedIn</span></a></li>
+							
+							<li class="cmp-btn small slim black">
+								<a href="https://www.microstrategy.com/en/company/contact-us">Contact us</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="cell s-sh">
+					<nav class="cmp-page-list cmp-nav-util">
+
+    <ul class="no-style">
+        <li><a href="/en/company/media-kit">Media Kit</a></li>
+    
+        <li><a href="/en/legal">Legal</a></li>
+    
+        <li><a href="/en/legal/terms-of-use">Terms of Use</a></li>
+    
+        <li><a href="/en/legal/privacy-policy">Privacy Policy</a></li>
+    </ul>
+</nav>
+
+					<p class="copyright">&copy;&nbsp;2023 Copyright MicroStrategy Incorporated. All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+		<div class="sitemapCell cell xxs-12 s-6 xl-8">
+			
+				
+			
+				
+			
+				
+			
+				
+					<div class="grid no-padding up-6">
+						<div class="navCell cell">
+							<nav class="cmp-nav-sitemap">
+								<p class="label">
+									
+									<a href="/en/business-intelligence">Intelligence</a>
+									
+								</p>
+								
+									<ul class="no-style">
+										
+										
+											
+											<li><a href="/en/business-intelligence">BI &amp; Analytics</a></li>
+										
+											
+											<li><a href="/en/hyperintelligence">Hyper</a></li>
+										
+											
+											<li><a href="/en/business-intelligence/embedded-intelligence">Embedded</a></li>
+										
+											
+											<li><a href="/en/business-intelligence/whats-new">What&#39;s New</a></li>
+										
+											
+											<li><a href="/en/go/products/request-pricing">Request Pricing</a></li>
+										
+										
+									</ul>
+								
+							</nav>
+						</div>
+					
+						<div class="navCell cell">
+							<nav class="cmp-nav-sitemap">
+								<p class="label">
+									
+									<a href="https://community.microstrategy.com/s/?language=en_US" target="_blank">Community</a>
+									
+								</p>
+								
+									<ul class="no-style">
+										
+										
+											
+											<li><a href="https://community.microstrategy.com/s/documentation" target="_blank">Documentation</a></li>
+										
+											
+											<li><a href="https://community.microstrategy.com/s/discussions?language=en_US" target="_blank">Knowledge Base</a></li>
+										
+											
+											<li><a href="https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/" target="_blank">API</a></li>
+										
+											
+											<li><a href="https://community.microstrategy.com/s/products?language=en_US" target="_blank">Software</a></li>
+										
+											
+											<li><a href="https://blog.microstrategy.com" target="_blank">Blog</a></li>
+										
+										
+									</ul>
+								
+							</nav>
+						</div>
+					
+						<div class="navCell cell">
+							<nav class="cmp-nav-sitemap">
+								<p class="label">
+									
+									<a href="/en/solutions">Solutions</a>
+									
+								</p>
+								
+									<ul class="no-style">
+										
+										
+											
+											<li><a href="/en/solutions/customer-stories">Customer Stories</a></li>
+										
+											
+											<li><a href="/en/solutions/retail">Retail</a></li>
+										
+											
+											<li><a href="/en/solutions/financial-services">Financial Services</a></li>
+										
+											
+											<li><a href="/en/solutions/healthcare-pharmaceuticals">Healthcare</a></li>
+										
+											
+											<li><a href="/en/solutions/federal-government">Government</a></li>
+										
+											
+											<li><a href="/en/embedded-analytics">Technology</a></li>
+										
+										
+									</ul>
+								
+							</nav>
+						</div>
+					
+						<div class="navCell cell">
+							<nav class="cmp-nav-sitemap">
+								<p class="label">
+									
+									<a href="/en/support">Services</a>
+									
+								</p>
+								
+									<ul class="no-style">
+										
+										
+											
+											<li><a href="/en/consulting">Consulting</a></li>
+										
+											
+											<li><a href="/en/business-intelligence/cloud-intelligence">Cloud</a></li>
+										
+											
+											<li><a href="/en/support">Support</a></li>
+										
+											
+											<li><a href="/en/education">Education</a></li>
+										
+											
+											<li><a href="/en/support/upgrade-support">Upgrade</a></li>
+										
+										
+									</ul>
+								
+							</nav>
+						</div>
+					
+						<div class="navCell cell">
+							<nav class="cmp-nav-sitemap">
+								<p class="label">
+									
+									<a href="/en/resources/events">Events</a>
+									
+								</p>
+								
+									<ul class="no-style">
+										
+										
+											
+											<li><a href="/en/world-2023">World 2023</a></li>
+										
+											
+											<li><a href="/en/resources/events/microworld-2022">MicroWorld</a></li>
+										
+											
+											<li><a href="/en/resources/webinar">Webinars</a></li>
+										
+										
+									</ul>
+								
+							</nav>
+						</div>
+					
+						<div class="navCell cell">
+							<nav class="cmp-nav-sitemap">
+								<p class="label">
+									
+									<a href="/en/company">About</a>
+									
+								</p>
+								
+									<ul class="no-style">
+										
+										
+											
+											<li><a href="/en/resources/research-and-reports">Analyst Research</a></li>
+										
+											
+											<li><a href="/en/partners">Partners</a></li>
+										
+											
+											<li><a href="/en/careers">Careers</a></li>
+										
+											
+											<li><a href="/en/investor-relations#leadership">Leadership</a></li>
+										
+											
+											<li><a href="/en/investor-relations">Investor Relations</a></li>
+										
+										<li><a href="https://www.hope.com" target="_blank">Bitcoin</a></li>
+									</ul>
+								
+							</nav>
+						</div>
+					</div>
+				
+			
+		</div>
+		<div class="cell s-hi">
+			<nav class="cmp-page-list cmp-nav-util">
+
+    <ul class="no-style">
+        <li><a href="/en/company/media-kit">Media Kit</a></li>
+    
+        <li><a href="/en/legal">Legal</a></li>
+    
+        <li><a href="/en/legal/terms-of-use">Terms of Use</a></li>
+    
+        <li><a href="/en/legal/privacy-policy">Privacy Policy</a></li>
+    </ul>
+</nav>
+
+			<p class="copyright">&copy;&nbsp;2023 Copyright MicroStrategy Incorporated. All Rights Reserved.</p>
+		</div>
+	</div>
+</footer>
+<div id="dialog_layer" class="cmp-dialogs dialogs">
+	<div id="embedDialog" role="dialog" aria-labelledby="embedDialogLabel" aria-modal="true" class="cmp-dialog hidden">
+	</div>
+	<div id="contentDialog" role="dialog" aria-labelledby="contentDialogLabel" aria-modal="true" class="cmp-dialog hidden">
+	</div>
+</div></div>
+
+    
+</div>
+
+</div></div>
+
+    
+</div>
+
+    
+</div>
+</div>
+
+
+    
+    
+    
+
+
+    
+    
+<script src="/etc.clientlibs/microstrategy/components/content/list/resourceslibrary/clientlibs.92406944ae12519a0bb0b887cc0567aa.js"></script>
+<script src="/etc.clientlibs/microstrategy/components/content/list/courses/clientlibs.8252df226be90822337d80e150a453f7.js"></script>
+<script src="/etc.clientlibs/microstrategy/components/content/course/clientlib.f203f11a1c73a40c54d329e0db6a0b7c.js"></script>
+<script src="/etc.clientlibs/microstrategy/clientlibs/clientlib-base.4ae6a026afa6ded7cca379a9a3d1db67.js"></script>
+
+
+
+    
+    
+
+
+
+    
+    
+<script src="/etc.clientlibs/microstrategy/clientlibs/analytics.d3072ce674ab48f13039a58a74efe71f.js"></script>
+
+
+
+    <script>
+        jplist.init();
+        </script>
+
+<script class="coveo-script" src="https://static.cloud.coveo.com/searchui/v2.10090/js/CoveoJsSearch.Lazy.min.js"></script>
+<script src="https://static.cloud.coveo.com/searchui/v2.10090/js/templates/templates.js"></script>
+
+    
+
+
+
+    
+
+    
+
+
+    
+
+
+<div class="loadingSpinner"></div>
+</body>
+</html>
