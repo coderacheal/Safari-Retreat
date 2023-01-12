@@ -17,6 +17,7 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
+- [🙏 Technical Dodumentaion](#technical-documentation)
 - [📝 License](#license)
 
 
@@ -57,8 +58,8 @@
 
 ### Key Features <a name="Mobile Version of Portfolio"></a>
 
-- **Project tiles**
-- **Interactive icons**
+- **TWebsite has an interactive logo that takes you to the home page.**
+- **Has two pages on both the moblie and desktop version.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -174,18 +175,19 @@ Feel free to check the [issues page](../../issues/).
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+Design Credit
 
-I would like to thank Web Bos for his tutorials on flexbox
+Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
+## Technical Documentation <a name="technical-documentation"></a>
 
-## Design Credit
+Watch Loom video [here](https://www.loom.com/share/f56d5b1cc0fe4ae79ff354ae8e5d9d53)
 
-Original design idea by Cindy Shin in Behance.
-
+p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 📝 License <a name="license"></a>
