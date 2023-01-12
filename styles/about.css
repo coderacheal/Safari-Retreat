@@ -376,6 +376,10 @@ main {
     padding-top: 20px;
   }
 
+  .akwaaba {
+    font-size: 30px;
+  }
+
   .event-name {
     font-size: 60px;
     padding-bottom: 10px;
@@ -392,7 +396,7 @@ main {
     align-self: center;
     margin: 0 25% 0 25%;
     font-size: 14px;
-    padding: 10px;
+    padding: 25px;
     margin-top: 15px;
   }
 }
@@ -407,12 +411,16 @@ main {
     padding-bottom: 10px;
   }
 
+  .akwaaba {
+    font-size: 35px;
+  }
+
   .intro-message {
     width: 50%;
     align-self: center;
     margin: 0 25% 0 25%;
     font-size: 16px;
-    padding: 10px;
+    padding: 25px;
     margin-top: 15px;
   }
 
