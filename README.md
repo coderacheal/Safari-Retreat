@@ -34,28 +34,6 @@
 - CSS
 - JAVASCRIPT
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
-
-
 ### Key Features <a name="Mobile Version of Portfolio"></a>
 
 - **TWebsite has an interactive logo that takes you to the home page.**
