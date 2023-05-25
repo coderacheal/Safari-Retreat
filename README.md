@@ -36,7 +36,7 @@
 
 ### Key Features <a name="Mobile Version of Portfolio"></a>
 
-- **TWebsite has an interactive logo that takes you to the home page.**
+- **The website has an interactive logo that takes you to the home page.**
 - **Has two pages on both the moblie and desktop version.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -105,9 +105,7 @@ A web browser
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 ## 👥 Authors <a name="authors"></a>
-
 
 
 👤 **Racheal Appiah-kubi**
